@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import {
+  StructuredData,
+  organizationSchema,
+  webSiteSchema,
+} from "@/components/StructuredData";
 
 const siteUrl = "https://alphaxxxx.com";
 
@@ -78,6 +83,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-AU">
+      <head>
+        <StructuredData data={organizationSchema} />
+        <StructuredData data={webSiteSchema} />
+      </head>
       <body>{children}</body>
     </html>
   );
