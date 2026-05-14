@@ -10,23 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
     },
     {
-      path: "/audit",
-      priority: 0.9,
-      changeFrequency: "monthly" as const,
-    },
-    {
       path: "/guides/what-is-geo",
       priority: 0.9,
-      changeFrequency: "monthly" as const,
-    },
-    {
-      path: "/faq",
-      priority: 0.85,
-      changeFrequency: "monthly" as const,
-    },
-    {
-      path: "/about",
-      priority: 0.7,
       changeFrequency: "monthly" as const,
     },
   ];
