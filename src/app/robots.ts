@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const siteUrl = "https://alphaxxxx.com";
+import { SITE_URL } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -15,6 +14,14 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: "Bingbot",
+        allow: "/",
+      },
+      {
+        userAgent: "Google-Extended",
+        allow: "/",
+      },
+      {
+        userAgent: "GoogleOther",
         allow: "/",
       },
       {
@@ -49,8 +56,12 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "ClaudeBot",
         allow: "/",
       },
+      {
+        userAgent: "Applebot",
+        allow: "/",
+      },
     ],
-    sitemap: `${siteUrl}/sitemap.xml`,
-    host: siteUrl,
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
   };
 }

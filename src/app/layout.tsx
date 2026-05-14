@@ -1,23 +1,24 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { StructuredData } from "@/components/StructuredData";
 import {
-  StructuredData,
+  SITE_LANGUAGE,
+  SITE_NAME,
+  SITE_URL,
   organizationSchema,
+  siteDescription,
   webSiteSchema,
-} from "@/components/StructuredData";
-
-const siteUrl = "https://alphaxxxx.com";
+} from "@/lib/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
 
   title: {
-    default: "ALPHAXX | AI Search Visibility & GEO Intelligence",
-    template: "%s | ALPHAXX",
+    default: `${SITE_NAME} | AI Search Visibility & GEO Intelligence`,
+    template: `%s | ${SITE_NAME}`,
   },
 
-  description:
-    "ALPHAXX is an AI Search Visibility and Generative Engine Optimization platform that helps brands become discoverable, retrievable, citable, and recommended by AI search systems.",
+  description: siteDescription,
 
   keywords: [
     "ALPHAXX",
@@ -36,29 +37,36 @@ export const metadata: Metadata = {
     "Structured Content",
   ],
 
-  authors: [{ name: "ALPHAXX" }],
-  creator: "ALPHAXX",
-  publisher: "ALPHAXX",
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
 
   alternates: {
-    canonical: siteUrl,
+    canonical: SITE_URL,
   },
 
   openGraph: {
-    title: "ALPHAXX | AI Search Visibility & GEO Intelligence",
-    description:
-      "Prepare your brand for the answer engine era. ALPHAXX helps businesses improve visibility inside AI-generated answers.",
-    url: siteUrl,
-    siteName: "ALPHAXX",
+    title: `${SITE_NAME} | AI Search Visibility & GEO Intelligence`,
+    description: siteDescription,
+    url: SITE_URL,
+    siteName: SITE_NAME,
     type: "website",
     locale: "en_AU",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} AI search visibility platform`,
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "ALPHAXX | AI Search Visibility & GEO Intelligence",
-    description:
-      "AI Search Visibility and Generative Engine Optimization platform for brands preparing for the answer engine era.",
+    title: `${SITE_NAME} | AI Search Visibility & GEO Intelligence`,
+    description: siteDescription,
+    images: ["/opengraph-image"],
   },
 
   robots: {
@@ -82,7 +90,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-AU">
+    <html lang={SITE_LANGUAGE}>
       <head>
         <StructuredData data={organizationSchema} />
         <StructuredData data={webSiteSchema} />

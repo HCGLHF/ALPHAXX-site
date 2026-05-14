@@ -1,29 +1,12 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL, siteRoutes } from "@/lib/site";
 
-const siteUrl = "https://alphaxxxx.com";
+const lastModified = new Date("2026-05-14");
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    {
-      path: "",
-      priority: 1,
-      changeFrequency: "weekly" as const,
-    },
-    {
-      path: "/guides/what-is-geo",
-      priority: 0.9,
-      changeFrequency: "monthly" as const,
-    },
-    {
-      path: "/faq",
-      priority: 0.85,
-      changeFrequency: "monthly" as const,
-    },
-  ];
-
-  return routes.map((route) => ({
-    url: `${siteUrl}${route.path}`,
-    lastModified: new Date(),
+  return siteRoutes.map((route) => ({
+    url: `${SITE_URL}${route.path}`,
+    lastModified,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));
