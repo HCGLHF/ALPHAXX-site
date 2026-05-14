@@ -14,6 +14,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       changeFrequency: "monthly" as const,
     },
+    {
+      path: "/faq",
+      priority: 0.85,
+      changeFrequency: "monthly" as const,
+    },
   ];
 
   return routes.map((route) => ({
