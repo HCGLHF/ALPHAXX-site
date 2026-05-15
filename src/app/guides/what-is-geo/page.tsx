@@ -4,12 +4,13 @@ import { externalSources } from "@/lib/content";
 import {
   articleSchema,
   breadcrumbSchema,
+  CONTENT_PUBLISHED_DATE,
+  CONTENT_UPDATED_DATE,
   getRoute,
   pageMetadata,
 } from "@/lib/site";
 
 const route = getRoute("/guides/what-is-geo");
-const published = "2026-05-14";
 
 export const metadata = pageMetadata(route);
 
@@ -22,8 +23,8 @@ export default function WhatIsGeoPage() {
             path: route.path,
             headline: route.title,
             description: route.description,
-            datePublished: published,
-            dateModified: published,
+            datePublished: CONTENT_PUBLISHED_DATE,
+            dateModified: CONTENT_UPDATED_DATE,
           }),
           breadcrumbSchema([
             { name: "Home", path: "" },
@@ -46,7 +47,8 @@ export default function WhatIsGeoPage() {
             and recommend inside generated answers.
           </p>
           <p className="mt-3 text-sm text-zinc-500">
-            Published by ALPHAXXXX on {published}. Updated {published}.
+            Published by ALPHAXXXX on {CONTENT_PUBLISHED_DATE}. Updated{" "}
+            {CONTENT_UPDATED_DATE}.
           </p>
 
           <div className="mt-12 space-y-10 text-base leading-8 text-zinc-700">

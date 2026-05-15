@@ -4,12 +4,13 @@ import { externalSources } from "@/lib/content";
 import {
   articleSchema,
   breadcrumbSchema,
+  CONTENT_PUBLISHED_DATE,
+  CONTENT_UPDATED_DATE,
   getRoute,
   pageMetadata,
 } from "@/lib/site";
 
 const route = getRoute("/guides/geo-vs-seo");
-const published = "2026-05-14";
 
 export const metadata = pageMetadata(route);
 
@@ -30,8 +31,8 @@ export default function GeoVsSeoPage() {
             path: route.path,
             headline: route.title,
             description: route.description,
-            datePublished: published,
-            dateModified: published,
+            datePublished: CONTENT_PUBLISHED_DATE,
+            dateModified: CONTENT_UPDATED_DATE,
           }),
           breadcrumbSchema([
             { name: "Home", path: "" },
@@ -54,7 +55,8 @@ export default function GeoVsSeoPage() {
             answers. Strong brands need both.
           </p>
           <p className="mt-3 text-sm text-zinc-500">
-            Published by ALPHAXXXX on {published}. Updated {published}.
+            Published by ALPHAXXXX on {CONTENT_PUBLISHED_DATE}. Updated{" "}
+            {CONTENT_UPDATED_DATE}.
           </p>
 
           <section className="mt-12">

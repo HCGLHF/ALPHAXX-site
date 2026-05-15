@@ -4,6 +4,8 @@ export const SITE_URL = "https://alphaxxxx.com";
 export const SITE_NAME = "ALPHAXXXX";
 export const SITE_LOCALE = "en_AU";
 export const SITE_LANGUAGE = "en-AU";
+export const CONTENT_PUBLISHED_DATE = "2026-05-14";
+export const CONTENT_UPDATED_DATE = "2026-05-15";
 
 export const siteDescription =
   "ALPHAXXXX helps businesses evaluate and improve how AI search engines, LLMs, RAG systems, and retrieval-based search systems understand, retrieve, cite, and recommend their web content.";
@@ -96,6 +98,14 @@ export const siteRoutes: SiteRoute[] = [
     changeFrequency: "monthly",
   },
 ];
+
+export const primaryNavLinks = [
+  { label: "Platform", href: "" },
+  { label: "GEO Audit", href: "/audit" },
+  { label: "Service", href: "/services/ai-search-visibility" },
+  { label: "Guides", href: "/guides/what-is-geo" },
+  { label: "FAQ", href: "/faq" },
+] as const;
 
 export function absoluteUrl(path = "") {
   return `${SITE_URL}${path}`;

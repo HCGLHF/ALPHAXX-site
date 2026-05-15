@@ -1,13 +1,10 @@
 import Link from "next/link";
-import { SITE_NAME, absoluteUrl } from "@/lib/site";
+import { SITE_NAME, absoluteUrl, primaryNavLinks } from "@/lib/site";
 
-const navLinks = [
-  { label: "Platform", href: "/" },
-  { label: "GEO Audit", href: "/audit" },
-  { label: "Service", href: "/services/ai-search-visibility" },
-  { label: "Guides", href: "/guides/what-is-geo" },
-  { label: "FAQ", href: "/faq" },
-];
+const navLinks = primaryNavLinks.map((link) => ({
+  ...link,
+  href: link.href || "/",
+}));
 
 export function SiteHeader() {
   return (
@@ -54,18 +51,18 @@ export function SiteFooter() {
             {SITE_NAME}
           </div>
           <p className="mt-3 max-w-xl text-sm leading-6 text-zinc-600">
-            AI search visibility and Generative Engine Optimization for
-            Australian brands that want to be discovered, cited, and recommended
-            by answer engines.
+            Generative Engine Optimization infrastructure for businesses that
+            want AI search engines, LLMs, and RAG systems to understand,
+            retrieve, cite, and recommend their content.
           </p>
         </div>
         <nav aria-label="Footer">
           <ul className="grid gap-2 text-sm text-zinc-600 sm:grid-cols-2">
             {navLinks.map((link) => (
               <li key={link.href}>
-              <Link className="hover:text-zinc-950" href={link.href}>
-                {link.label}
-              </Link>
+                <Link className="hover:text-zinc-950" href={link.href}>
+                  {link.label}
+                </Link>
               </li>
             ))}
             <li>
@@ -149,7 +146,10 @@ export function EvidenceList({
       <ul className="mt-4 grid gap-3 text-sm text-zinc-700">
         {items.map((item) => (
           <li key={item.href}>
-            <a className="font-medium text-teal-800 underline-offset-4 hover:underline" href={item.href}>
+            <a
+              className="font-medium text-teal-800 underline-offset-4 hover:underline"
+              href={item.href}
+            >
               {item.label}
             </a>
           </li>
