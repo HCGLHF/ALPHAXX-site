@@ -52,9 +52,9 @@ export default function ServicePage() {
             Build the signals AI search systems need before they cite you.
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-600">
-            ALPHAXX helps Australian brands move beyond blue-link SEO by
-            improving the content and technical signals that answer engines use
-            to retrieve, summarize, and recommend web pages.
+            ALPHAXXXX helps businesses move beyond blue-link SEO by improving
+            the content and technical signals that answer engines, LLMs, and RAG
+            systems use to retrieve, summarize, cite, and recommend web pages.
           </p>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function ServicePage() {
               <article key={engine} className="rounded-lg border border-white/10 bg-white/[0.04] p-5">
                 <h2 className="text-lg font-semibold">{engine}</h2>
                 <p className="mt-2 text-sm leading-6 text-zinc-300">
-                  ALPHAXX prepares pages with clear answers, crawl access,
+                  ALPHAXXXX prepares pages with clear answers, crawl access,
                   schema, and evidence that {engine} can evaluate.
                 </p>
               </article>

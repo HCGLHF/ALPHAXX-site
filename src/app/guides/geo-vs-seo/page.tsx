@@ -54,7 +54,7 @@ export default function GeoVsSeoPage() {
             answers. Strong brands need both.
           </p>
           <p className="mt-3 text-sm text-zinc-500">
-            Published by ALPHAXX on {published}. Updated {published}.
+            Published by ALPHAXXXX on {published}. Updated {published}.
           </p>
 
           <section className="mt-12">

@@ -1,13 +1,13 @@
 export const faqs = [
   {
-    question: "What is ALPHAXX?",
+    question: "What is ALPHAXXXX?",
     answer:
-      "ALPHAXX is an AI search visibility platform for Australian brands. It helps websites become easier for AI search systems to crawl, retrieve, understand, cite, and recommend inside generated answers.",
+      "ALPHAXXXX is a Generative Engine Optimization and AI search visibility infrastructure brand. It helps businesses evaluate and improve how AI search engines, LLMs, RAG systems, and retrieval-based search systems understand, retrieve, cite, and recommend their web content.",
   },
   {
     question: "What is Generative Engine Optimization?",
     answer:
-      "Generative Engine Optimization, or GEO, is the practice of structuring a website so AI search systems can understand the entity behind the page, retrieve relevant passages, and cite those passages accurately in generated answers.",
+      "Generative Engine Optimization, or GEO, is the practice of making web content easier for AI search engines and LLM-powered answer engines to understand, retrieve, cite, and recommend. GEO focuses on AI readability, retrieval readiness, entity clarity, and citation readiness.",
   },
   {
     question: "How is GEO different from SEO?",
@@ -15,9 +15,29 @@ export const faqs = [
       "SEO focuses on ranking pages in traditional search results. GEO focuses on being selected, summarized, cited, and recommended inside AI-generated answers from systems such as ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, and Copilot.",
   },
   {
-    question: "Which AI platforms does ALPHAXX optimize for?",
+    question: "Which AI platforms does ALPHAXXXX optimize for?",
     answer:
-      "ALPHAXX focuses on visibility signals used by ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, Microsoft Copilot, Bing, and other answer engines that rely on crawlable, structured, trustworthy web content.",
+      "ALPHAXXXX focuses on visibility signals used by ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, Microsoft Copilot, Bing, and retrieval-based search systems that rely on crawlable, structured, trustworthy web content.",
+  },
+  {
+    question: "Why does AI search visibility matter?",
+    answer:
+      "AI search visibility matters because users increasingly receive answers from AI assistants before they visit a traditional search results page. If a website is not retrievable, understandable, or citable, it may be absent from AI-generated answers even when it has useful information.",
+  },
+  {
+    question: "How can a website become more AI-readable?",
+    answer:
+      "A website becomes more AI-readable by using server-rendered text, clear headings, direct answer paragraphs, consistent entity names, accurate metadata, crawlable internal links, and structured data that matches visible page content.",
+  },
+  {
+    question: "How does citation readiness work?",
+    answer:
+      "Citation readiness measures whether an AI system can quote or reference a page with confidence. A citation-ready page states claims clearly, provides supporting context, shows update signals, identifies the source entity, and avoids hiding key information behind client-only interfaces.",
+  },
+  {
+    question: "What signals help AI systems understand a brand?",
+    answer:
+      "AI systems understand a brand more reliably when the same entity name, service category, location, topic coverage, schema markup, author identity, and source URLs appear consistently across visible content, metadata, JSON-LD, sitemap entries, and internal links.",
   },
   {
     question: "What makes a page AI-citable?",
@@ -25,9 +45,9 @@ export const faqs = [
       "An AI-citable page gives direct answers, identifies entities clearly, supports claims with visible evidence, uses descriptive headings, includes current metadata, and publishes structured data that matches the visible page content.",
   },
   {
-    question: "Can ALPHAXX guarantee that an AI model will recommend a brand?",
+    question: "Can ALPHAXXXX guarantee that an AI model will recommend a brand?",
     answer:
-      "No provider can guarantee a specific AI-generated answer. ALPHAXX improves the underlying signals that increase the probability of being retrieved, represented, cited, and recommended by AI search systems.",
+      "No provider can guarantee a specific AI-generated answer. ALPHAXXXX improves the underlying signals that increase the probability of being retrieved, represented, cited, and recommended by AI search systems.",
   },
   {
     question: "Does AI search visibility require structured data?",

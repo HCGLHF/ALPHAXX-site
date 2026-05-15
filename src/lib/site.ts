@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const SITE_URL = "https://alphaxxxx.com";
-export const SITE_NAME = "ALPHAXX";
+export const SITE_NAME = "ALPHAXXXX";
 export const SITE_LOCALE = "en_AU";
 export const SITE_LANGUAGE = "en-AU";
 
 export const siteDescription =
-  "ALPHAXX helps Australian brands become discoverable, retrievable, citable, and recommended across AI search systems including ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, and Copilot.";
+  "ALPHAXXXX helps businesses evaluate and improve how AI search engines, LLMs, RAG systems, and retrieval-based search systems understand, retrieve, cite, and recommend their web content.";
 
 export const aiEngines = [
   "ChatGPT",
@@ -15,6 +15,20 @@ export const aiEngines = [
   "Claude",
   "Gemini",
   "Microsoft Copilot",
+] as const;
+
+export const coreConcepts = [
+  "ALPHAXXXX",
+  "Generative Engine Optimization",
+  "GEO",
+  "AI search visibility",
+  "AI citation readiness",
+  "AI crawler readability",
+  "retrieval-based search",
+  "RAG systems",
+  "LLM visibility",
+  "structured content",
+  "answer engine optimization",
 ] as const;
 
 export type SiteRoute = {
@@ -28,7 +42,7 @@ export type SiteRoute = {
 export const siteRoutes: SiteRoute[] = [
   {
     path: "",
-    title: "ALPHAXX | AI Search Visibility & GEO Intelligence",
+    title: "ALPHAXXXX | GEO and AI Search Visibility Infrastructure",
     description: siteDescription,
     priority: 1,
     changeFrequency: "weekly",
@@ -37,15 +51,15 @@ export const siteRoutes: SiteRoute[] = [
     path: "/audit",
     title: "GEO Audit for AI Search Visibility",
     description:
-      "Audit how clearly AI search systems can crawl, retrieve, understand, cite, and recommend your brand.",
+      "Audit how clearly AI search engines, LLMs, and RAG systems can crawl, retrieve, understand, cite, and recommend your brand.",
     priority: 0.95,
     changeFrequency: "monthly",
   },
   {
     path: "/services/ai-search-visibility",
-    title: "AI Search Visibility Services",
+    title: "AI Search Visibility and Citation Readiness Services",
     description:
-      "Improve retrieval readiness, entity clarity, structured content, schema, and citation readiness for AI search.",
+      "Improve AI crawler readability, retrieval readiness, entity clarity, structured content, schema, and citation readiness for AI search.",
     priority: 0.9,
     changeFrequency: "monthly",
   },
@@ -53,7 +67,7 @@ export const siteRoutes: SiteRoute[] = [
     path: "/guides/what-is-geo",
     title: "What Is GEO? Generative Engine Optimization Explained",
     description:
-      "A practical guide to Generative Engine Optimization and how brands become visible in AI-generated answers.",
+      "A practical guide to Generative Engine Optimization, AI search visibility, LLM visibility, and citation readiness.",
     priority: 0.9,
     changeFrequency: "monthly",
   },
@@ -77,7 +91,7 @@ export const siteRoutes: SiteRoute[] = [
     path: "/faq",
     title: "FAQ",
     description:
-      "Frequently asked questions about ALPHAXX, Generative Engine Optimization, AI search visibility, and AI citation readiness.",
+      "Frequently asked questions about ALPHAXXXX, Generative Engine Optimization, AI search visibility, AI crawler readability, RAG systems, LLM visibility, and citation readiness.",
     priority: 0.85,
     changeFrequency: "monthly",
   },
@@ -108,7 +122,7 @@ export function pageMetadata(route: SiteRoute): Metadata {
           url: "/opengraph-image",
           width: 1200,
           height: 630,
-          alt: `${SITE_NAME} AI search visibility platform`,
+          alt: `${SITE_NAME} Generative Engine Optimization infrastructure`,
         },
       ],
     },
@@ -142,16 +156,7 @@ export const organizationSchema = {
     "@type": "Country",
     name: "Australia",
   },
-  knowsAbout: [
-    "Generative Engine Optimization",
-    "AI Search Visibility",
-    "Answer Engine Optimization",
-    "AI Citation Readiness",
-    "Entity Authority",
-    "Structured Content",
-    "Schema Markup",
-    "Retrieval-Augmented Generation",
-  ],
+  knowsAbout: [...coreConcepts, "schema markup", "entity authority"],
 };
 
 export const webSiteSchema = {
@@ -181,7 +186,20 @@ export const aiSearchServiceSchema = {
     name: "Australia",
   },
   description:
-    "ALPHAXX improves retrieval readiness, citation readiness, entity clarity, structured content, schema, and authority signals for AI-powered search engines.",
+    "ALPHAXXXX improves AI crawler readability, retrieval readiness, citation readiness, entity clarity, structured content, schema, and authority signals for AI-powered search engines, LLMs, and RAG systems.",
+};
+
+export const definedTermSetSchema = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": `${SITE_URL}/#alphaxxxx-geo-glossary`,
+  name: "ALPHAXXXX AI readability concepts",
+  description:
+    "Core concepts used by ALPHAXXXX to describe Generative Engine Optimization, AI search visibility, AI citation readiness, AI crawler readability, LLM visibility, and retrieval-based search.",
+  hasDefinedTerm: coreConcepts.map((term) => ({
+    "@type": "DefinedTerm",
+    name: term,
+  })),
 };
 
 export function breadcrumbSchema(items: { name: string; path: string }[]) {

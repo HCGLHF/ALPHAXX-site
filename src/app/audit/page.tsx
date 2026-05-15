@@ -18,7 +18,7 @@ const auditChecks = [
   },
   {
     title: "Entity clarity",
-    body: "Review whether the page consistently explains the brand, service category, target market, locations served, and topics ALPHAXX should be associated with.",
+    body: "Review whether the page consistently explains the brand, service category, target market, locations served, and topics ALPHAXXXX should be associated with.",
   },
   {
     title: "Citation readiness",
@@ -77,9 +77,9 @@ export default function AuditPage() {
             Find out whether AI search systems can read and cite your brand.
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-600">
-            The ALPHAXX GEO Audit reviews the crawl, content, entity, and
-            structured data signals that influence whether your pages can appear
-            inside AI-generated answers.
+            The ALPHAXXXX GEO Audit reviews the crawl, content, entity, and
+            structured data signals that influence whether your pages can be
+            retrieved, cited, and represented inside AI-generated answers.
           </p>
         </div>
       </section>

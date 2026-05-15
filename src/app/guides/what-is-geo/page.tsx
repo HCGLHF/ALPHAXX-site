@@ -46,7 +46,7 @@ export default function WhatIsGeoPage() {
             and recommend inside generated answers.
           </p>
           <p className="mt-3 text-sm text-zinc-500">
-            Published by ALPHAXX on {published}. Updated {published}.
+            Published by ALPHAXXXX on {published}. Updated {published}.
           </p>
 
           <div className="mt-12 space-y-10 text-base leading-8 text-zinc-700">
@@ -146,7 +146,7 @@ export default function WhatIsGeoPage() {
                 evaluate public pages that real users also need to trust.
               </p>
               <p className="mt-4">
-                The third mistake is entity drift. If one page says ALPHAXX, a
+                The third mistake is entity drift. If one page says ALPHAXXXX, a
                 second page says a different brand, and schema says a third
                 name, an answer engine has to guess whether those entities are
                 the same. GEO starts by removing that ambiguity.

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { SITE_NAME } from "@/lib/site";
 
-export const alt = "ALPHAXX AI search visibility platform";
+export const alt = "ALPHAXXXX AI search visibility platform";
 export const size = {
   width: 1200,
   height: 630,

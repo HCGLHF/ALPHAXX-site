@@ -5,6 +5,7 @@ import {
   SITE_LANGUAGE,
   SITE_NAME,
   SITE_URL,
+  definedTermSetSchema,
   organizationSchema,
   siteDescription,
   webSiteSchema,
@@ -21,20 +22,24 @@ export const metadata: Metadata = {
   description: siteDescription,
 
   keywords: [
-    "ALPHAXX",
+    "ALPHAXXXX",
     "Generative Engine Optimization",
     "GEO",
     "AI Search Visibility",
     "Answer Engine Optimization",
     "AI SEO",
+    "AI crawler readability",
+    "AI citation readiness",
+    "LLM visibility",
+    "RAG systems",
+    "retrieval-based search",
+    "structured content",
     "ChatGPT Search Optimization",
     "Perplexity Optimization",
     "Google AI Overviews",
     "AI Search Ranking",
-    "AI Citation Readiness",
     "Entity Authority",
     "Schema Markup",
-    "Structured Content",
   ],
 
   authors: [{ name: SITE_NAME }],
@@ -57,7 +62,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: `${SITE_NAME} AI search visibility platform`,
+        alt: `${SITE_NAME} Generative Engine Optimization infrastructure`,
       },
     ],
   },
@@ -94,6 +99,7 @@ export default function RootLayout({
       <head>
         <StructuredData data={organizationSchema} />
         <StructuredData data={webSiteSchema} />
+        <StructuredData data={definedTermSetSchema} />
       </head>
       <body>{children}</body>
     </html>

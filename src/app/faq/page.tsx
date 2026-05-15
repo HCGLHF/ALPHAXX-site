@@ -39,12 +39,12 @@ export default function FAQPage() {
               FAQ
             </p>
             <h1 className="mt-3 text-4xl font-semibold tracking-tight text-zinc-950 md:text-5xl">
-              ALPHAXX frequently asked questions
+              ALPHAXXXX AI readability and GEO FAQ
             </h1>
             <p className="mt-4 text-base leading-7 text-zinc-600">
               Direct answers about Generative Engine Optimization, AI search
-              visibility, citation readiness, crawler access, and structured
-              content.
+              visibility, AI crawler readability, RAG systems, LLM visibility,
+              citation readiness, and structured content.
             </p>
           </div>
           <div className="mt-12 grid gap-4">

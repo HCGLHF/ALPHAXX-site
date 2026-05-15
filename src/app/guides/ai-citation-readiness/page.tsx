@@ -72,7 +72,7 @@ export default function CitationReadinessPage() {
             cite it accurately.
           </p>
           <p className="mt-3 text-sm text-zinc-500">
-            Published by ALPHAXX on {published}. Updated {published}.
+            Published by ALPHAXXXX on {published}. Updated {published}.
           </p>
 
           <div className="mt-12 space-y-10 text-base leading-8 text-zinc-700">

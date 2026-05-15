@@ -15,27 +15,27 @@ export const metadata = pageMetadata(route);
 
 const answerBlocks = [
   {
-    title: "What ALPHAXX does",
-    body: "ALPHAXX improves the technical and editorial signals that help AI search systems retrieve, understand, cite, and recommend a brand inside generated answers.",
+    title: "What ALPHAXXXX is",
+    body: "ALPHAXXXX is a Generative Engine Optimization infrastructure brand for AI search visibility, LLM visibility, AI crawler readability, and citation readiness.",
   },
   {
-    title: "Who it is for",
-    body: "The platform is built for Australian B2B, SaaS, professional services, education, finance, healthcare, legal, and technology brands competing on expertise.",
+    title: "What ALPHAXXXX does",
+    body: "ALPHAXXXX helps businesses evaluate and improve how AI search engines, LLMs, RAG systems, and retrieval-based search systems understand, retrieve, cite, and recommend web content.",
   },
   {
     title: "What changes on a website",
-    body: "ALPHAXX strengthens crawl access, metadata, schema, semantic headings, answer-first content, entity clarity, evidence blocks, and internal knowledge paths.",
+    body: "ALPHAXXXX strengthens crawl access, metadata, schema, semantic headings, answer-first paragraphs, entity clarity, evidence blocks, and internal knowledge paths.",
   },
 ];
 
 const capabilities = [
-  "AI crawler access review",
+  "AI crawler readability review",
   "Entity and brand disambiguation",
   "Answer-first content restructuring",
   "FAQ and citation block design",
   "Schema and metadata implementation",
   "Sitemap and canonical hygiene",
-  "AI search visibility monitoring",
+  "LLM and RAG visibility assessment",
   "Editorial evidence mapping",
 ];
 
@@ -48,7 +48,7 @@ const stats = [
   {
     label: "Core signals",
     value: "40+",
-    detail: "Crawl, retrieval, schema, content, evidence, and entity signals.",
+    detail: "Crawler readability, retrieval, schema, content, evidence, and entity signals.",
   },
   {
     label: "Main outcome",
@@ -71,15 +71,15 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
-              AI Search Visibility for Australia
+              Generative Engine Optimization infrastructure
             </p>
             <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-tight text-zinc-950 md:text-7xl">
-              Make your brand readable, retrievable, and citable by AI search.
+              ALPHAXXXX makes websites readable, retrievable, and citable by AI search.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-600">
-              ALPHAXX helps brands prepare for answer engines by improving the
-              way search crawlers, AI systems, and users understand the same
-              public pages.
+              ALPHAXXXX helps businesses improve AI readability, retrieval
+              readiness, entity clarity, structured content, and citation
+              readiness for AI search engines, LLMs, and RAG systems.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -106,10 +106,10 @@ export default function Home() {
             </p>
             <div className="mt-6 grid gap-4">
               {[
-                ["Retrieval readiness", "High"],
-                ["Citation readiness", "Needs evidence"],
-                ["Entity clarity", "Improving"],
-                ["Schema coverage", "Expandable"],
+                ["AI crawler readability", "Auditable"],
+                ["Retrieval readiness", "Measurable"],
+                ["Citation readiness", "Evidence-led"],
+                ["Entity clarity", "Structured"],
               ].map(([label, value]) => (
                 <div
                   key={label}
@@ -123,8 +123,8 @@ export default function Home() {
               ))}
             </div>
             <p className="mt-6 text-sm leading-6 text-zinc-600">
-              The audit checks whether AI systems can fetch the page, identify
-              the brand entity, extract direct answers, and connect claims to
+              The audit checks whether AI systems can fetch a page, identify
+              the source entity, extract direct answers, and connect claims to
               visible evidence.
             </p>
           </aside>
@@ -139,8 +139,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           <SectionHeading
             eyebrow="Answer blocks"
-            title="Content shaped for humans and AI retrieval"
-            description="AI search systems work best with pages that make their claims explicit. ALPHAXX turns vague marketing pages into structured, answerable, evidence-backed pages."
+            title="Direct statements that AI answer engines can extract"
+            description="AI search systems work best with pages that make their claims explicit. ALPHAXXXX turns vague marketing pages into structured, answerable, evidence-backed information sources."
           />
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {answerBlocks.map((block) => (
@@ -156,8 +156,8 @@ export default function Home() {
       <section className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[0.8fr_1fr]">
         <SectionHeading
           eyebrow="Coverage"
-          title="Built around the answer engines customers actually use"
-          description="ALPHAXX treats AI search as a distribution layer. Each target system still needs crawlable pages, clear entities, durable facts, and structured metadata."
+          title="Built for AI search, LLM answers, and retrieval-based systems"
+          description="ALPHAXXXX treats AI search as a distribution layer. Each target system still needs crawlable pages, clear entities, durable facts, structured metadata, and visible evidence."
         />
         <div className="grid gap-3 sm:grid-cols-2">
           {aiEngines.map((engine) => (
@@ -175,9 +175,9 @@ export default function Home() {
       <section className="bg-zinc-950 py-16 text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.8fr_1fr]">
           <SectionHeading
-            eyebrow="GEO capabilities"
-            title="The optimization layer between SEO and AI answers"
-            description="The work combines technical crawl access, semantic structure, content quality, evidence design, and entity-level authority."
+          eyebrow="GEO capabilities"
+            title="The optimization layer between SEO, RAG, and AI answers"
+            description="The work combines technical crawl access, semantic structure, structured content, evidence design, citation readiness, and entity-level authority."
             invert
           />
           <ul className="grid gap-3 sm:grid-cols-2">
