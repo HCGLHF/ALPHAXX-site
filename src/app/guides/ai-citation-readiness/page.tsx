@@ -16,24 +16,24 @@ export const metadata = pageMetadata(route);
 
 const readinessSteps = [
   {
-    title: "State the answer early",
-    body: "Put the direct answer near the top of the section before expanding with nuance, examples, or caveats.",
+    title: "Build semantic stability",
+    body: "Use the same brand name, service categories, product terms, and topical relationships across visible copy, metadata, internal links, and JSON-LD.",
   },
   {
-    title: "Make the entity explicit",
-    body: "Name the brand, service, location, author, and topic in visible copy and structured data.",
+    title: "Improve structural retrievability",
+    body: "Format important information as answer-first paragraphs, tables, lists, definitions, and schema-marked sections that RAG systems can parse and rank.",
   },
   {
     title: "Support claims visibly",
-    body: "Add dates, sources, examples, definitions, data points, or limitations near claims that a model may quote.",
+    body: "Add dates, source references, examples, definitions, data points, limitations, and supporting context near claims that a model may quote.",
   },
   {
-    title: "Use matching schema",
-    body: "Add Article, FAQPage, Service, Organization, and BreadcrumbList schema only when it reflects visible page content.",
+    title: "Measure real citation",
+    body: "Track Brand Mention Rate and Citation Share across a defined query set to confirm whether AI-generated answers are mentioning the brand more often.",
   },
   {
     title: "Build internal context",
-    body: "Link short answer pages to deeper supporting guides so crawlers can follow the full knowledge path.",
+    body: "Link short answer pages to deeper supporting guides and service pages so crawlers can follow the full knowledge path.",
   },
 ];
 
@@ -68,9 +68,10 @@ export default function CitationReadinessPage() {
             AI citation readiness
           </h1>
           <p className="mt-5 text-lg leading-8 text-zinc-600">
-            AI citation readiness is the degree to which a page gives answer
-            engines enough visible, structured, and trustworthy information to
-            cite it accurately.
+            AI citation readiness is the state in which a brand&apos;s content,
+            entity representation, and site structure are optimized enough for
+            AI platforms to identify, retrieve, and cite the brand as an
+            authoritative source.
           </p>
           <p className="mt-3 text-sm text-zinc-500">
             Published by ALPHAXXXX on {CONTENT_PUBLISHED_DATE}. Updated{" "}
@@ -80,20 +81,19 @@ export default function CitationReadinessPage() {
           <div className="mt-12 space-y-10 text-base leading-8 text-zinc-700">
             <section>
               <h2 className="text-3xl font-semibold tracking-tight text-zinc-950">
-                A citation-ready page reduces ambiguity
+                Citation readiness is a spectrum
               </h2>
               <p className="mt-4">
-                AI systems are more likely to cite pages that answer a question
-                directly and make the source of the answer clear. If a page
-                buries the answer in abstract copy, changes brand names between
-                sections, or makes unsupported claims, the system has to infer
-                too much.
+                Citation readiness is not binary. A brand may appear in some AI
+                answers but not others, or it may be mentioned less often than
+                competitors in the same query space. GEO work moves the brand
+                along that spectrum by reducing ambiguity and making source
+                material easier to retrieve.
               </p>
               <p className="mt-4">
-                Citation readiness is not about forcing a quote. It is about
-                making the page safer to quote. The page should help the model
-                understand what was said, who said it, when it was updated, and
-                why the claim is credible.
+                A citation-ready page helps the model understand what was said,
+                who said it, when it was updated, what evidence supports it, and
+                why the source entity is relevant to the user&apos;s query.
               </p>
             </section>
 
@@ -115,6 +115,40 @@ export default function CitationReadinessPage() {
                     </h3>
                     <p className="mt-3 text-sm leading-6 text-zinc-700">
                       {step.body}
+                    </p>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-semibold tracking-tight text-zinc-950">
+                Three components ALPHAXXXX evaluates
+              </h2>
+              <div className="mt-6 grid gap-4">
+                {[
+                  [
+                    "Semantic stability",
+                    "The brand name and associated concepts are represented consistently so AI models encode the brand as a clear entity rather than an ambiguous cluster of terms.",
+                  ],
+                  [
+                    "Structural retrievability",
+                    "The brand's content is formatted in ways RAG retrieval systems can parse, rank, and extract accurately, including tables, lists, schema markup, and clear information hierarchy.",
+                  ],
+                  [
+                    "Measurable citation",
+                    "The brand's actual appearance rate in AI-generated answers is tracked through Brand Mention Rate and Citation Share auditing.",
+                  ],
+                ].map(([title, body]) => (
+                  <article
+                    key={title}
+                    className="rounded-lg border border-zinc-200 bg-white p-5"
+                  >
+                    <h3 className="text-xl font-semibold text-zinc-950">
+                      {title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-6 text-zinc-700">
+                      {body}
                     </p>
                   </article>
                 ))}
@@ -149,6 +183,9 @@ export default function CitationReadinessPage() {
                   "A direct answer within the first two paragraphs.",
                   "Visible author or brand attribution.",
                   "Published and updated dates for guide content.",
+                  "Consistent brand and service entity names.",
+                  "Tables, lists, or definitions for facts that should be extracted.",
+                  "BMR or Citation Share tracking for important query sets.",
                   "Schema that matches the visible page.",
                   "Internal links to supporting pages.",
                   "External references for standards, crawler policies, or technical claims.",

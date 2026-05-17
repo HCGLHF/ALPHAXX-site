@@ -17,7 +17,7 @@ const auditChecks = [
     body: "Confirm that robots.txt, sitemap.xml, redirects, canonical tags, server rendering, and CDN rules allow search and AI crawlers to reach important pages.",
   },
   {
-    title: "Entity clarity",
+    title: "Semantic entity stability",
     body: "Review whether the page consistently explains the brand, service category, target market, locations served, and topics ALPHAXXXX should be associated with.",
   },
   {
@@ -30,7 +30,11 @@ const auditChecks = [
   },
   {
     title: "Answer extraction",
-    body: "Evaluate whether AI systems can lift concise, accurate answers from headings, paragraphs, FAQs, and comparison sections without guessing context.",
+    body: "Evaluate whether AI systems can lift concise, accurate answers from headings, paragraphs, FAQs, tables, and comparison sections without guessing context.",
+  },
+  {
+    title: "BMR and Citation Share",
+    body: "Define the query set needed to measure Brand Mention Rate and compare ALPHAXXXX or a client brand against competitors inside AI-generated answers.",
   },
   {
     title: "Internal knowledge paths",
@@ -41,8 +45,8 @@ const auditChecks = [
 const stats = [
   {
     label: "Audit areas",
-    value: "6",
-    detail: "Technical access, entity signals, content, schema, evidence, and links.",
+    value: "7",
+    detail: "Technical access, entity signals, content, schema, evidence, links, and BMR.",
   },
   {
     label: "Crawler groups",
@@ -80,6 +84,8 @@ export default function AuditPage() {
             The ALPHAXXXX GEO Audit reviews the crawl, content, entity, and
             structured data signals that influence whether your pages can be
             retrieved, cited, and represented inside AI-generated answers.
+            The output identifies both technical fixes and measurement gaps
+            such as Brand Mention Rate and Citation Share coverage.
           </p>
         </div>
       </section>
@@ -113,6 +119,7 @@ export default function AuditPage() {
         <ol className="mt-8 grid gap-4">
           {[
             "Unify brand naming across visible copy, metadata, schema, and internal links.",
+            "Define a Brand Mention Rate query set for the industry and benchmark Citation Share against competitors.",
             "Make every important route discoverable through sitemap.xml and crawlable links.",
             "Add page-specific schema that describes the visible content on that page.",
             "Rewrite thin guides into direct-answer resources with dates, sources, and internal links.",

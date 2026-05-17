@@ -14,20 +14,20 @@ export const metadata = pageMetadata(route);
 
 const servicePillars = [
   {
-    title: "Retrieval readiness",
-    body: "Make important pages crawlable, indexable, internally linked, and structured so AI systems can find the right passage quickly.",
+    title: "Semantic Entity Engineering",
+    body: "Stabilize brand names, product terms, service categories, and industry concepts so AI models encode the brand as a clear, high-weight entity rather than a diffuse or ambiguous mention.",
   },
   {
-    title: "Citation readiness",
-    body: "Create direct answers, claim support, source references, and update signals that make pages safer for AI systems to quote.",
+    title: "Visibility Analytics and BMR",
+    body: "Measure AI search visibility with Brand Mention Rate, Citation Share auditing, baseline query sets, competitive benchmarks, and ongoing tracking across ChatGPT, Perplexity, and related answer systems.",
   },
   {
-    title: "Entity authority",
-    body: "Clarify who the brand is, what it offers, where it operates, and which topics it should be associated with across the site.",
+    title: "Structural Optimization",
+    body: "Re-engineer web content into AI-friendly tables, lists, answer blocks, schema markup, and page sections that RAG retrieval systems can parse, rank, and cite accurately.",
   },
   {
-    title: "Schema and metadata",
-    body: "Implement page-specific JSON-LD, canonical tags, OpenGraph metadata, sitemap coverage, and robots policies that match the intended entity graph.",
+    title: "Citation Readiness Implementation",
+    body: "Connect crawl access, metadata, canonical URLs, robots policies, internal links, update signals, and visible evidence so AI systems can cite the brand with confidence.",
   },
 ];
 
@@ -49,12 +49,13 @@ export default function ServicePage() {
             AI Search Visibility Service
           </p>
           <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-tight tracking-tight text-zinc-950 md:text-6xl">
-            Build the signals AI search systems need before they cite you.
+            Build the signals AI answer systems need before they mention you.
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-600">
             ALPHAXXXX helps businesses move beyond blue-link SEO by improving
-            the content and technical signals that answer engines, LLMs, and RAG
-            systems use to retrieve, summarize, cite, and recommend web pages.
+            the entity, content, measurement, and technical signals that answer
+            engines, LLMs, and RAG systems use to retrieve, cite, and recommend
+            brands.
           </p>
         </div>
       </section>
@@ -62,8 +63,8 @@ export default function ServicePage() {
       <section className="mx-auto max-w-7xl px-6 py-16">
         <SectionHeading
           eyebrow="Service pillars"
-          title="Four workstreams that make a site AI-readable"
-          description="Each workstream reinforces the same goal: make important pages easy to access, parse, trust, cite, and connect to the right brand entity."
+          title="Three GEO pillars plus citation implementation"
+          description="ALPHAXXXX works across the layers where AI citation decisions are made: entity encoding, retrieval and re-ranking, measurable visibility, and page-level citation readiness."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {servicePillars.map((pillar) => (
@@ -80,7 +81,7 @@ export default function ServicePage() {
           <SectionHeading
             eyebrow="Target systems"
             title="Optimization for answer engines and AI search interfaces"
-            description="No single schema tag guarantees inclusion, so the service strengthens multiple crawl, content, and trust signals across the systems your customers use."
+            description="No single schema tag guarantees inclusion. The service strengthens multiple entity, retrieval, measurement, and trust signals across the systems your customers use."
             invert
           />
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -89,7 +90,8 @@ export default function ServicePage() {
                 <h2 className="text-lg font-semibold">{engine}</h2>
                 <p className="mt-2 text-sm leading-6 text-zinc-300">
                   ALPHAXXXX prepares pages with clear answers, crawl access,
-                  schema, and evidence that {engine} can evaluate.
+                  schema, stable entities, and evidence that {engine} can
+                  evaluate.
                 </p>
               </article>
             ))}
@@ -104,8 +106,9 @@ export default function ServicePage() {
         <div className="mt-8 grid gap-4">
           {[
             "Core pages have unique metadata, canonical URLs, structured data, and visible answer sections.",
-            "Guides explain the topic with enough depth for search engines and AI systems to evaluate authority.",
-            "FAQ and service content use direct, extractable answers that match schema markup.",
+            "Brand naming, service categories, and topic entities become consistent across visible copy, metadata, and JSON-LD.",
+            "BMR and Citation Share reporting show whether AI-generated answers mention the brand more often over time.",
+            "Guides, FAQs, and service pages use direct, extractable answers that match schema markup.",
             "Sitemap and robots policies expose every important page to search and AI crawlers.",
           ].map((item) => (
             <p key={item} className="rounded-lg border border-zinc-200 bg-white p-5 text-base leading-7 text-zinc-700">

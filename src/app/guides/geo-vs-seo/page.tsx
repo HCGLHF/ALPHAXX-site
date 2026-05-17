@@ -15,11 +15,12 @@ const route = getRoute("/guides/geo-vs-seo");
 export const metadata = pageMetadata(route);
 
 const comparisons = [
-  ["Primary surface", "Search results pages", "AI-generated answers and citations"],
-  ["Success signal", "Ranking, clicks, impressions", "Retrieval, mention, citation, recommendation"],
-  ["Content shape", "Keyword-led pages", "Answer-first pages with explicit claims"],
-  ["Technical focus", "Crawl, index, performance", "Crawl, schema, entity clarity, extractability"],
-  ["Trust signal", "Authority and relevance", "Authority, evidence, freshness, and source clarity"],
+  ["Target system", "Traditional search engine algorithms", "LLM-based generative AI platforms"],
+  ["Success metric", "Page rank in a results list", "Brand citation rate in AI-generated answers"],
+  ["Core technique", "Keyword targeting, backlinks, page authority, and technical hygiene", "Semantic Entity Engineering, RAG pipeline optimization, and structured formatting"],
+  ["Output for user", "A list of links to choose from", "A single synthesized answer with selected sources"],
+  ["Visibility mechanism", "A user clicks through to a page", "An AI cites, quotes, mentions, or recommends the brand directly"],
+  ["Primary platforms", "Google and Bing search results", "ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, and Copilot"],
 ] as const;
 
 export default function GeoVsSeoPage() {
@@ -50,9 +51,10 @@ export default function GeoVsSeoPage() {
             GEO vs SEO
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-zinc-600">
-            SEO helps pages rank in search results. GEO helps pages become
-            retrievable, quotable, and recommendable inside AI-generated
-            answers. Strong brands need both.
+            SEO helps pages rank in search result lists. GEO helps brands
+            become retrievable, quotable, and recommendable inside
+            AI-generated answers. Strong brands need both, but the disciplines
+            use different signals and measurement frameworks.
           </p>
           <p className="mt-3 text-sm text-zinc-500">
             Published by ALPHAXXXX on {CONTENT_PUBLISHED_DATE}. Updated{" "}
@@ -117,11 +119,31 @@ export default function GeoVsSeoPage() {
                 page content.
               </p>
               <p className="mt-4">
-                GEO also cares about entity consistency. If a brand, product,
-                service, or location is named differently across metadata,
-                schema, navigation, and visible copy, the model has weaker
-                signals. Consistency helps AI systems connect the right entity
-                to the right query.
+                GEO also adds measurement that SEO dashboards do not capture.
+                ALPHAXXXX uses Brand Mention Rate to measure how often a brand
+                appears in AI-generated answers and Citation Share auditing to
+                compare that visibility against competitors in the same query
+                space.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-3xl font-semibold tracking-tight text-zinc-950">
+                Why first-page rankings are not enough
+              </h2>
+              <p className="mt-4">
+                A page can perform well in traditional search and still be
+                absent from ChatGPT or Perplexity answers. Traditional ranking
+                signals and AI citation signals overlap in some areas, but they
+                are different in kind. AI systems need source passages that are
+                easy to retrieve, entities that are stable, and claims that can
+                be cited safely.
+              </p>
+              <p className="mt-4">
+                This is why ALPHAXXXX treats GEO as a distinct discipline rather
+                than a small extension of SEO. GEO work focuses on the retrieval
+                and re-ranking stages where AI answer systems choose which
+                content and brands are included in a generated response.
               </p>
             </section>
 

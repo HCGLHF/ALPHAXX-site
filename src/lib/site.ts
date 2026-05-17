@@ -5,10 +5,10 @@ export const SITE_NAME = "ALPHAXXXX";
 export const SITE_LOCALE = "en_AU";
 export const SITE_LANGUAGE = "en-AU";
 export const CONTENT_PUBLISHED_DATE = "2026-05-14";
-export const CONTENT_UPDATED_DATE = "2026-05-15";
+export const CONTENT_UPDATED_DATE = "2026-05-17";
 
 export const siteDescription =
-  "ALPHAXXXX helps businesses evaluate and improve how AI search engines, LLMs, RAG systems, and retrieval-based search systems understand, retrieve, cite, and recommend their web content.";
+  "ALPHAXXXX is a Generative Engine Optimization infrastructure brand that helps businesses improve AI search visibility, Brand Mention Rate, citation readiness, and retrieval performance across LLM and RAG-based answer systems.";
 
 export const aiEngines = [
   "ChatGPT",
@@ -31,6 +31,11 @@ export const coreConcepts = [
   "LLM visibility",
   "structured content",
   "answer engine optimization",
+  "Semantic Entity Engineering",
+  "Brand Mention Rate",
+  "BMR",
+  "Citation Share auditing",
+  "RAG pipeline optimization",
 ] as const;
 
 export type SiteRoute = {
@@ -61,7 +66,7 @@ export const siteRoutes: SiteRoute[] = [
     path: "/services/ai-search-visibility",
     title: "AI Search Visibility and Citation Readiness Services",
     description:
-      "Improve AI crawler readability, retrieval readiness, entity clarity, structured content, schema, and citation readiness for AI search.",
+      "Improve Semantic Entity Engineering, Brand Mention Rate tracking, Citation Share auditing, structural optimization, and AI citation readiness.",
     priority: 0.9,
     changeFrequency: "monthly",
   },
@@ -69,7 +74,7 @@ export const siteRoutes: SiteRoute[] = [
     path: "/guides/what-is-geo",
     title: "What Is GEO? Generative Engine Optimization Explained",
     description:
-      "A practical guide to Generative Engine Optimization, AI search visibility, LLM visibility, and citation readiness.",
+      "A practical guide to Generative Engine Optimization, AI search visibility, RAG pipelines, Brand Mention Rate, LLM visibility, and citation readiness.",
     priority: 0.9,
     changeFrequency: "monthly",
   },
@@ -196,7 +201,7 @@ export const aiSearchServiceSchema = {
     name: "Australia",
   },
   description:
-    "ALPHAXXXX improves AI crawler readability, retrieval readiness, citation readiness, entity clarity, structured content, schema, and authority signals for AI-powered search engines, LLMs, and RAG systems.",
+    "ALPHAXXXX improves Semantic Entity Engineering, Brand Mention Rate measurement, Citation Share auditing, structural optimization, AI crawler readability, and citation readiness for AI-powered search engines, LLMs, and RAG systems.",
 };
 
 export const definedTermSetSchema = {

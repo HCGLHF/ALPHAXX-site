@@ -16,27 +16,27 @@ export const metadata = pageMetadata(route);
 const answerBlocks = [
   {
     title: "What ALPHAXXXX is",
-    body: "ALPHAXXXX is a Generative Engine Optimization infrastructure brand for AI search visibility, LLM visibility, AI crawler readability, and citation readiness.",
+    body: "ALPHAXXXX is a Generative Engine Optimization infrastructure brand for AI search visibility, Brand Mention Rate measurement, LLM visibility, and citation readiness.",
   },
   {
     title: "What ALPHAXXXX does",
-    body: "ALPHAXXXX helps businesses evaluate and improve how AI search engines, LLMs, RAG systems, and retrieval-based search systems understand, retrieve, cite, and recommend web content.",
+    body: "ALPHAXXXX helps businesses structure, format, and position content so AI search platforms can retrieve, cite, quote, and recommend the brand inside generated answers.",
   },
   {
-    title: "What changes on a website",
-    body: "ALPHAXXXX strengthens crawl access, metadata, schema, semantic headings, answer-first paragraphs, entity clarity, evidence blocks, and internal knowledge paths.",
+    title: "How ALPHAXXXX measures visibility",
+    body: "ALPHAXXXX tracks Brand Mention Rate, Citation Share, retrieval readiness, entity stability, and structural retrievability across ChatGPT, Perplexity, and other AI answer systems.",
   },
 ];
 
 const capabilities = [
-  "AI crawler readability review",
-  "Entity and brand disambiguation",
-  "Answer-first content restructuring",
-  "FAQ and citation block design",
+  "Semantic Entity Engineering",
+  "Brand Mention Rate tracking",
+  "Citation Share auditing",
+  "Structural Optimization",
+  "RAG pipeline readiness",
+  "AI citation readiness",
   "Schema and metadata implementation",
-  "Sitemap and canonical hygiene",
-  "LLM and RAG visibility assessment",
-  "Editorial evidence mapping",
+  "Entity-level authority mapping",
 ];
 
 const stats = [
@@ -48,12 +48,12 @@ const stats = [
   {
     label: "Core signals",
     value: "40+",
-    detail: "Crawler readability, retrieval, schema, content, evidence, and entity signals.",
+    detail: "Crawler readability, entity stability, retrieval, schema, evidence, and citation signals.",
   },
   {
     label: "Main outcome",
-    value: "Citable",
-    detail: "Pages structured so answer engines can cite them with confidence.",
+    value: "Mentioned",
+    detail: "Pages and entities structured to improve citation and brand mention probability.",
   },
 ] as const;
 
@@ -77,9 +77,10 @@ export default function Home() {
               ALPHAXXXX makes websites readable, retrievable, and citable by AI search.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-600">
-              ALPHAXXXX helps businesses improve AI readability, retrieval
-              readiness, entity clarity, structured content, and citation
-              readiness for AI search engines, LLMs, and RAG systems.
+              ALPHAXXXX helps businesses move beyond the blue-link era by
+              improving semantic entity stability, structural retrievability,
+              Brand Mention Rate, and citation readiness for LLM and RAG-based
+              answer systems.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -124,8 +125,8 @@ export default function Home() {
             </div>
             <p className="mt-6 text-sm leading-6 text-zinc-600">
               The audit checks whether AI systems can fetch a page, identify
-              the source entity, extract direct answers, and connect claims to
-              visible evidence.
+              the source entity, retrieve the right passage, and cite the brand
+              in response to relevant user queries.
             </p>
           </aside>
         </div>
@@ -140,7 +141,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Answer blocks"
             title="Direct statements that AI answer engines can extract"
-            description="AI search systems work best with pages that make their claims explicit. ALPHAXXXX turns vague marketing pages into structured, answerable, evidence-backed information sources."
+            description="AI search systems work best with pages that make claims explicit. ALPHAXXXX turns vague marketing content into structured, answerable, measurable information sources."
           />
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {answerBlocks.map((block) => (
@@ -157,7 +158,7 @@ export default function Home() {
         <SectionHeading
           eyebrow="Coverage"
           title="Built for AI search, LLM answers, and retrieval-based systems"
-          description="ALPHAXXXX treats AI search as a distribution layer. Each target system still needs crawlable pages, clear entities, durable facts, structured metadata, and visible evidence."
+          description="ALPHAXXXX treats AI search as a distribution layer. Each target system still needs crawlable pages, stable entities, durable facts, structured metadata, and visible evidence."
         />
         <div className="grid gap-3 sm:grid-cols-2">
           {aiEngines.map((engine) => (
@@ -175,9 +176,9 @@ export default function Home() {
       <section className="bg-zinc-950 py-16 text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.8fr_1fr]">
           <SectionHeading
-          eyebrow="GEO capabilities"
+            eyebrow="GEO capabilities"
             title="The optimization layer between SEO, RAG, and AI answers"
-            description="The work combines technical crawl access, semantic structure, structured content, evidence design, citation readiness, and entity-level authority."
+            description="The work combines Semantic Entity Engineering, Visibility Analytics, Structural Optimization, crawl access, schema, evidence design, and RAG pipeline readiness."
             invert
           />
           <ul className="grid gap-3 sm:grid-cols-2">
