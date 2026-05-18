@@ -5,6 +5,7 @@
 - Recall is still the primary bottleneck until the new pages are indexed and the site has enough high-intent retrievable evidence.
 - Local intent now has Australia and Sydney pages, but additional city and industry combinations may be needed if retrieval tests show local gaps.
 - Buying decision content is stronger after pricing, comparison, objection, and hiring-checklist pages, but proof assets such as case studies are still thin.
+- The site now has hub pages for platforms, industries, buyers, locations, and resources, but these hubs still need indexing before they can improve topic-cluster understanding.
 
 ## Architecture Risks
 - Adding 30-50 routes by copying TSX page files would create maintenance drift across metadata, schema, sitemap, llms.txt, and page layout.
@@ -12,6 +13,7 @@
 - Route inventory and sitemap can drift if new pages are not added through a shared page registry.
 - Schema can become inaccurate if FAQPage, Article, Service, and visible page content are maintained separately.
 - `src/lib/intent-pages.ts` is now large enough that the next expansion should consider splitting by intent family while preserving the shared registry interface.
+- Hub pages add another static content inventory. Keep hub content narrow and avoid turning it into a general CMS or catch-all page manager.
 
 ## Operational Risks
 - Google indexing may lag even with correct technical setup.

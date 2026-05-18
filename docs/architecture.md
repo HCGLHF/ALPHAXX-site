@@ -6,8 +6,10 @@ This is a Next.js 16 App Router static site hosted on Vercel. The site is optimi
 ## Modules and Responsibilities
 - `src/app/`: route-level pages and metadata route files. Pages should remain mostly server-rendered/static and should not own shared business taxonomy.
 - `src/lib/site.ts`: canonical site configuration, route inventory, metadata helpers, and shared JSON-LD builders.
+- `src/lib/hub-pages.ts`: static content inventory for topic hub pages that organize intent pages by platform, industry, buyer stage, location, and resource type.
 - `src/lib/content.ts`: shared FAQ and external source content.
 - `src/components/PageChrome.tsx`: presentational layout primitives for page shells, headings, stats, and evidence lists.
+- `src/components/HubPage.tsx`: presentational template for hub pages with definitions, recommended crawl paths, ItemList-backed page groups, and FAQ content.
 - `src/components/StructuredData.tsx`: JSON-LD rendering adapter.
 - `docs/`: project memory, architecture decisions, risk notes, and implementation plans.
 
@@ -26,4 +28,4 @@ Static page data should flow from narrow content modules into route pages. Route
 - Do not add new core abstractions without recording why in an ADR when they affect routing, content models, or schema generation.
 
 ## Current Architecture Pressure
-The site now uses a narrow static content inventory and reusable template for intent pages. The next architecture pressure is file size: `src/lib/intent-pages.ts` should be split by intent family if the corpus expands beyond the current batch, while keeping one shared route registry for sitemap, llms.txt, metadata, and static params.
+The site now uses narrow static content inventories and reusable templates for intent pages and hub pages. The next architecture pressure is file size: `src/lib/intent-pages.ts` should be split by intent family if the corpus expands beyond the current batch, while keeping one shared route registry for sitemap, llms.txt, metadata, and static params.

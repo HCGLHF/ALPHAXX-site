@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { hubPages } from "@/lib/hub-pages";
 import { intentPages } from "@/lib/intent-pages";
 
 export const SITE_URL = "https://alphaxxxx.com";
@@ -54,6 +55,46 @@ export const coreSiteRoutes: SiteRoute[] = [
     description: siteDescription,
     priority: 1,
     changeFrequency: "weekly",
+  },
+  {
+    path: "/platforms",
+    title: "AI Search Platforms Hub",
+    description:
+      "A hub for ALPHAXXXX pages about ChatGPT recommendations, Perplexity visibility, Google AI Overviews citations, and AI platform visibility tracking.",
+    priority: 0.9,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/industries",
+    title: "Industries Hub",
+    description:
+      "A hub for ALPHAXXXX industry pages covering SaaS, B2B, professional services, SEO agencies, local service businesses, and sales or retail-led companies.",
+    priority: 0.9,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/buyers",
+    title: "Buyer Decision Hub",
+    description:
+      "A hub for ALPHAXXXX buyer decision pages about GEO pricing, small business value, agency comparison, hiring questions, and objection handling.",
+    priority: 0.9,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/locations",
+    title: "Locations Hub",
+    description:
+      "A location hub for ALPHAXXXX pages focused on Australia, Sydney, local service visibility, and AI search optimization for sales-led and retail-demand businesses.",
+    priority: 0.9,
+    changeFrequency: "monthly",
+  },
+  {
+    path: "/resources",
+    title: "GEO Resources Hub",
+    description:
+      "A resource hub for ALPHAXXXX guides, checklists, audits, FAQs, and explanatory pages about GEO, AI search visibility, and citation readiness.",
+    priority: 0.9,
+    changeFrequency: "monthly",
   },
   {
     path: "/audit",
@@ -129,11 +170,19 @@ export const siteRoutes: SiteRoute[] = [...coreSiteRoutes, ...intentPageRoutes];
 
 export const primaryNavLinks = [
   { label: "Platform", href: "" },
+  { label: "Resources", href: "/resources" },
+  { label: "Industries", href: "/industries" },
+  { label: "Locations", href: "/locations" },
   { label: "GEO Audit", href: "/audit" },
-  { label: "Service", href: "/services/ai-search-visibility" },
-  { label: "Guides", href: "/guides/what-is-geo" },
-  { label: "FAQ", href: "/faq" },
 ] as const;
+
+const missingHubRoutes = hubPages
+  .map((page) => page.path)
+  .filter((path) => !coreSiteRoutes.some((route) => route.path === path));
+
+if (missingHubRoutes.length > 0) {
+  throw new Error(`Missing hub routes: ${missingHubRoutes.join(", ")}`);
+}
 
 export function absoluteUrl(path = "") {
   return `${SITE_URL}${path}`;

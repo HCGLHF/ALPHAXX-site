@@ -1,6 +1,9 @@
 # Next
 
 ## Done
+- Added five hub pages: `/platforms`, `/industries`, `/buyers`, `/locations`, and `/resources`.
+- Added hub page content, reusable hub rendering, CollectionPage, ItemList, FAQPage, and BreadcrumbList structured data.
+- Connected the hub pages to sitemap, llms.txt, homepage links, primary navigation, and the GEO corpus verification script.
 - Implemented the second batch of 12 high-intent GEO corpus pages in `src/lib/intent-pages.ts`.
 - Added `npm run verify:geo-corpus` so the intent-page inventory can be checked after each expansion.
 - Added second-batch links to the homepage and AI search visibility service page.
@@ -13,6 +16,8 @@
 - Connected the new pages to shared route inventory, sitemap generation, llms.txt, metadata, JSON-LD, homepage links, and service-page links.
 
 ## Learned
+- The site needed hub-level information architecture because a flat set of root intent pages is less clear for crawlers than platform, industry, buyer, location, and resource clusters.
+- `/locations` should explicitly center Australia and Sydney while naming target customers as local, retail-demand, sales-led, B2B, agency, and professional services businesses.
 - The typed intent-page inventory can scale the corpus without adding route files; the new pages automatically feed static params, sitemap, llms.txt, metadata, and JSON-LD.
 - The second batch moves the site from 19 sitemap URLs toward 31 sitemap URLs, passing the first 30+ URL corpus threshold.
 - `src/lib/intent-pages.ts` is now large; the next content expansion should split intent data by family before adding another large batch.
@@ -25,6 +30,7 @@
 - Next.js 16 successfully statically prerenders the new dynamic `[slug]` route when `generateStaticParams` is used with the typed static content inventory.
 
 ## Risks
+- Hub pages improve structure, but Google and AI systems still need time to crawl and index them before they can affect retrieval experiments.
 - The corpus is now larger, but external entity signals are still weak; ALPHAXXXX still needs trusted third-party mentions after on-site pages are indexed.
 - More pages in one inventory file could reduce maintainability if the next 10-20 URLs are added without a family-level split.
 - IndexNow notifies Bing and participating search engines, but it does not guarantee indexing and does not replace Google Search Console submission.
@@ -34,6 +40,6 @@
 - The new pages still need deployment and manual URL submission before they can influence Google, Bing, and AI retrieval experiments.
 
 ## Next
-1. Push and deploy the second batch of 12 high-intent pages.
-2. After Vercel deploys, run `npm run indexnow:submit` again so Bing receives the updated 31-URL sitemap.
-3. Submit the new high-intent URLs and updated sitemap in Google Search Console.
+1. Push and deploy the five hub pages.
+2. After Vercel deploys, run `npm run indexnow:submit` again so Bing receives the updated sitemap.
+3. Add the five hub URLs to the next Google Search Console manual indexing batch, together with the existing queued URLs.

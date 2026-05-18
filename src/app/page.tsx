@@ -71,6 +71,14 @@ const highIntentLinks = [
   { label: "AI Visibility for B2B Companies", href: "/ai-search-visibility-for-b2b-companies" },
 ] as const;
 
+const hubLinks = [
+  { label: "Platforms", href: "/platforms", detail: "ChatGPT, Perplexity, Google AI Overviews, and AI visibility tracking." },
+  { label: "Industries", href: "/industries", detail: "SaaS, B2B, professional services, local services, agencies, retail and sales-led businesses." },
+  { label: "Buyers", href: "/buyers", detail: "Pricing, agency comparison, hiring questions, objections, and small-business fit." },
+  { label: "Locations", href: "/locations", detail: "Australia, Sydney, local service demand, and regional GEO signals." },
+  { label: "Resources", href: "/resources", detail: "Guides, checklists, audits, FAQs, and citation readiness explainers." },
+] as const;
+
 export default function Home() {
   return (
     <PageShell>
@@ -205,6 +213,26 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <SectionHeading
+          eyebrow="Knowledge hubs"
+          title="Topic clusters for AI crawlers and RAG systems"
+          description="These hub pages organize ALPHAXXXX by platform, industry, buyer intent, location, and resource type so the site reads less like a flat URL list and more like a structured knowledge base."
+        />
+        <div className="mt-8 grid gap-4 md:grid-cols-5">
+          {hubLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-lg border border-zinc-200 bg-white p-5 transition-colors hover:border-teal-700"
+            >
+              <h2 className="text-lg font-semibold text-zinc-950">{link.label}</h2>
+              <p className="mt-2 text-sm leading-6 text-zinc-600">{link.detail}</p>
+            </Link>
+          ))}
         </div>
       </section>
 

@@ -4,6 +4,8 @@ import { join } from "node:path";
 const root = process.cwd();
 const requiredFiles = [
   "src/lib/intent-pages.ts",
+  "src/lib/hub-pages.ts",
+  "src/components/HubPage.tsx",
   "src/components/IntentPage.tsx",
   "src/app/(intent)/[slug]/page.tsx",
 ];
@@ -35,6 +37,14 @@ const requiredSlugs = [
   "ai-search-visibility-for-professional-services",
 ];
 
+const requiredHubPaths = [
+  "/platforms",
+  "/industries",
+  "/buyers",
+  "/locations",
+  "/resources",
+];
+
 const missingFiles = requiredFiles.filter((file) => !existsSync(join(root, file)));
 
 if (missingFiles.length > 0) {
@@ -49,11 +59,24 @@ if (missingSlugs.length > 0) {
 }
 
 const siteSource = readFileSync(join(root, "src/lib/site.ts"), "utf8");
+const hubSource = readFileSync(join(root, "src/lib/hub-pages.ts"), "utf8");
 const routeSource = readFileSync(join(root, "src/app/(intent)/[slug]/page.tsx"), "utf8");
 const llmsSource = readFileSync(join(root, "src/app/llms.txt/route.ts"), "utf8");
 
 if (!siteSource.includes("intentPageRoutes")) {
   throw new Error("siteRoutes is not connected to intentPageRoutes");
+}
+
+const missingHubPaths = requiredHubPaths.filter((path) => !siteSource.includes(`path: "${path}"`));
+
+if (missingHubPaths.length > 0) {
+  throw new Error(`Missing hub paths in site routes: ${missingHubPaths.join(", ")}`);
+}
+
+const missingHubContent = requiredHubPaths.filter((path) => !hubSource.includes(`path: "${path}"`));
+
+if (missingHubContent.length > 0) {
+  throw new Error(`Missing hub content paths: ${missingHubContent.join(", ")}`);
 }
 
 if (!routeSource.includes("generateStaticParams")) {
@@ -68,4 +91,4 @@ if (!llmsSource.includes("High-intent GEO pages")) {
   throw new Error("llms.txt is missing the high-intent GEO pages section");
 }
 
-console.log(`Verified ${requiredSlugs.length} GEO intent pages.`);
+console.log(`Verified ${requiredSlugs.length} GEO intent pages and ${requiredHubPaths.length} hub pages.`);
