@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { intentPages } from "@/lib/intent-pages";
 
 export const SITE_URL = "https://alphaxxxx.com";
 export const SITE_NAME = "ALPHAXXXX";
 export const SITE_LOCALE = "en_AU";
 export const SITE_LANGUAGE = "en-AU";
 export const CONTENT_PUBLISHED_DATE = "2026-05-14";
-export const CONTENT_UPDATED_DATE = "2026-05-17";
+export const CONTENT_UPDATED_DATE = "2026-05-18";
 
 export const siteDescription =
   "ALPHAXXXX is a Generative Engine Optimization infrastructure brand that helps businesses improve AI search visibility, Brand Mention Rate, citation readiness, and retrieval performance across LLM and RAG-based answer systems.";
@@ -46,7 +47,7 @@ export type SiteRoute = {
   changeFrequency: "weekly" | "monthly";
 };
 
-export const siteRoutes: SiteRoute[] = [
+export const coreSiteRoutes: SiteRoute[] = [
   {
     path: "",
     title: "ALPHAXXXX | GEO and AI Search Visibility Infrastructure",
@@ -103,6 +104,28 @@ export const siteRoutes: SiteRoute[] = [
     changeFrequency: "monthly",
   },
 ];
+
+function intentPriority(family: (typeof intentPages)[number]["family"]) {
+  if (family === "location" || family === "audit" || family === "pricing") {
+    return 0.9;
+  }
+
+  if (family === "platform" || family === "industry") {
+    return 0.85;
+  }
+
+  return 0.8;
+}
+
+export const intentPageRoutes: SiteRoute[] = intentPages.map((page) => ({
+  path: page.path,
+  title: page.title,
+  description: page.description,
+  priority: intentPriority(page.family),
+  changeFrequency: "monthly",
+}));
+
+export const siteRoutes: SiteRoute[] = [...coreSiteRoutes, ...intentPageRoutes];
 
 export const primaryNavLinks = [
   { label: "Platform", href: "" },

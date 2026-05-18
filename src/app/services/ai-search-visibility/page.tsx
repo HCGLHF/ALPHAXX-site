@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { StructuredData } from "@/components/StructuredData";
 import { PageShell, SectionHeading } from "@/components/PageChrome";
 import {
@@ -30,6 +31,15 @@ const servicePillars = [
     body: "Connect crawl access, metadata, canonical URLs, robots policies, internal links, update signals, and visible evidence so AI systems can cite the brand with confidence.",
   },
 ];
+
+const serviceEvidenceLinks = [
+  { label: "ChatGPT recommendation optimization", href: "/chatgpt-recommendation-optimization" },
+  { label: "Perplexity visibility optimization", href: "/perplexity-visibility-optimization" },
+  { label: "Google AI Overviews visibility", href: "/google-ai-overviews-visibility" },
+  { label: "GEO for SaaS companies", href: "/geo-for-saas-companies" },
+  { label: "GEO for local service businesses", href: "/geo-for-local-service-businesses" },
+  { label: "GEO for SEO agencies", href: "/geo-for-seo-agencies" },
+] as const;
 
 export default function ServicePage() {
   return (
@@ -115,6 +125,27 @@ export default function ServicePage() {
               {item}
             </p>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-6">
+          <SectionHeading
+            eyebrow="Supporting evidence pages"
+            title="Platform and industry paths for AI retrieval"
+            description="These pages create more retrievable evidence for platform-specific, industry-specific, and buyer-intent GEO questions."
+          />
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {serviceEvidenceLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="rounded-lg border border-zinc-200 bg-[#f7f6f1] p-5 text-sm font-medium text-zinc-800 transition-colors hover:border-teal-700 hover:text-teal-800"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </PageShell>

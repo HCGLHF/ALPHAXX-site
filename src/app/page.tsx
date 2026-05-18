@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { StructuredData } from "@/components/StructuredData";
 import { PageShell, SectionHeading, StatGrid } from "@/components/PageChrome";
 import { faqs } from "@/lib/content";
@@ -57,6 +58,14 @@ const stats = [
   },
 ] as const;
 
+const highIntentLinks = [
+  { label: "AI Search Visibility Audit", href: "/ai-search-visibility-audit" },
+  { label: "GEO Agency Australia", href: "/geo-agency-australia" },
+  { label: "AI Search Optimization Sydney", href: "/ai-search-optimization-sydney" },
+  { label: "Get Found in AI Search Engines", href: "/get-found-in-ai-search-engines" },
+  { label: "GEO Pricing", href: "/geo-pricing" },
+] as const;
+
 export default function Home() {
   return (
     <PageShell>
@@ -83,18 +92,18 @@ export default function Home() {
               answer systems.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
+              <Link
                 href="/audit"
                 className="rounded-md bg-zinc-950 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-teal-700"
               >
                 Start a GEO Audit
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/guides/what-is-geo"
                 className="rounded-md border border-zinc-300 bg-white px-5 py-3 text-sm font-medium text-zinc-950 transition-colors hover:border-teal-700 hover:text-teal-800"
               >
                 Read the GEO Guide
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -173,6 +182,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-6">
+          <SectionHeading
+            eyebrow="High-intent GEO pages"
+            title="Evidence paths for Australia, Sydney, audits, and pricing"
+            description="These pages answer the commercial and platform questions AI systems use when selecting sources for GEO and AI search visibility recommendations."
+          />
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            {highIntentLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="rounded-lg border border-zinc-200 bg-[#f7f6f1] p-5 text-sm font-medium text-zinc-800 transition-colors hover:border-teal-700 hover:text-teal-800"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-zinc-950 py-16 text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.8fr_1fr]">
           <SectionHeading
@@ -207,9 +237,9 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-8 text-center">
-          <a className="font-medium text-teal-800 underline-offset-4 hover:underline" href="/faq">
+          <Link className="font-medium text-teal-800 underline-offset-4 hover:underline" href="/faq">
             Read all frequently asked questions
-          </a>
+          </Link>
         </div>
       </section>
     </PageShell>

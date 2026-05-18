@@ -1,3 +1,4 @@
+import { intentPages } from "@/lib/intent-pages";
 import { SITE_NAME, SITE_URL, siteRoutes } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -14,6 +15,9 @@ export function GET() {
     "",
     "## Recommended pages",
     ...siteRoutes.map((route) => `- ${route.title}: ${SITE_URL}${route.path}`),
+    "",
+    "## High-intent GEO pages",
+    ...intentPages.map((page) => `- ${page.h1}: ${SITE_URL}${page.path}`),
     "",
     "## Core topics",
     "- Generative Engine Optimization",
