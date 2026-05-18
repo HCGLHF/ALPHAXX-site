@@ -165,7 +165,7 @@ export const intentPages: IntentPage[] = [
     internalLinks: [
       ...coreLinks,
       { label: "GEO agency Australia", href: "/geo-agency-australia" },
-      { label: "AI search visibility checklist", href: "/get-found-in-ai-search-engines" },
+      { label: "AI search visibility checklist", href: "/ai-search-visibility-checklist" },
     ],
   },
   {
@@ -807,6 +807,774 @@ export const intentPages: IntentPage[] = [
       ...coreLinks,
       { label: "GEO pricing", href: "/geo-pricing" },
       { label: "GEO agency Australia", href: "/geo-agency-australia" },
+    ],
+  },
+  {
+    slug: "how-to-get-recommended-by-chatgpt",
+    path: "/how-to-get-recommended-by-chatgpt",
+    title: "How to Get Recommended by ChatGPT | ALPHAXXXX",
+    description:
+      "A practical GEO guide for businesses that want ChatGPT to retrieve, understand, mention, and recommend their brand.",
+    family: "platform",
+    schemaType: "Article",
+    h1: "How can a business get recommended by ChatGPT?",
+    shortAnswer:
+      "A business improves its chance of being recommended by ChatGPT by publishing crawlable, structured, evidence-rich pages that clearly state the brand, category, market, services, proof, pricing context, and customer fit. ALPHAXXXX helps companies build those retrieval and citation signals.",
+    audience: [
+      "Businesses that want ChatGPT to mention them in vendor discovery answers.",
+      "Marketing teams that need a practical ChatGPT visibility plan.",
+      "Companies with SEO content that does not translate into AI recommendations.",
+    ],
+    outcomes: [
+      "Clearer source material for ChatGPT-style recommendation questions.",
+      "More answer-ready passages for service, pricing, comparison, and proof queries.",
+      "A measurable Brand Mention Rate baseline for ChatGPT prompts.",
+    ],
+    deliverables: [
+      "ChatGPT query and intent map.",
+      "Answer-ready page structure.",
+      "Entity and service-category consistency review.",
+      "BMR tracking plan for recommendation prompts.",
+    ],
+    sections: [
+      {
+        heading: "ChatGPT needs retrievable evidence before it can recommend a brand",
+        body: "ChatGPT recommendations are more likely when a brand has accessible pages that explain what the company does, who it serves, which problems it solves, and why it is credible. Thin positioning copy gives the model less usable evidence than direct, structured answers.",
+      },
+      {
+        heading: "Recommendation pages should match buyer questions",
+        body: "Useful pages answer questions such as which provider to choose, how much the service costs, what to ask before hiring, and how the service compares with alternatives. ALPHAXXXX builds these pages so they are useful to people and easier for AI systems to retrieve.",
+      },
+      {
+        heading: "Measurement is based on mentions, not rankings",
+        body: "For ChatGPT visibility, the practical metric is whether the brand appears in relevant generated answers. ALPHAXXXX uses Brand Mention Rate to track that visibility across a defined set of prompts.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can a company force ChatGPT to recommend it?",
+        answer:
+          "No. A company cannot force a specific ChatGPT answer, but it can improve the content, entity, and citation signals that make the brand easier to retrieve and recommend.",
+      },
+      {
+        question: "What pages help ChatGPT recommendations?",
+        answer:
+          "Service pages, pricing pages, comparison pages, FAQs, case studies, industry pages, and answer-first guides all provide useful recommendation evidence.",
+      },
+      {
+        question: "How does ALPHAXXXX measure ChatGPT recommendation visibility?",
+        answer:
+          "ALPHAXXXX measures Brand Mention Rate across a query set that reflects problem-aware, solution-aware, vendor discovery, and objection-handling prompts.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "ChatGPT recommendation optimization", href: "/chatgpt-recommendation-optimization" },
+      { label: "Questions before hiring a GEO agency", href: "/questions-to-ask-before-hiring-a-geo-agency" },
+    ],
+  },
+  {
+    slug: "how-to-appear-in-perplexity-answers",
+    path: "/how-to-appear-in-perplexity-answers",
+    title: "How to Appear in Perplexity Answers | ALPHAXXXX",
+    description:
+      "Learn how to make business content more retrievable, citable, and useful for Perplexity answer results.",
+    family: "platform",
+    schemaType: "Article",
+    h1: "How can a business appear in Perplexity answers?",
+    shortAnswer:
+      "A business can improve Perplexity visibility by publishing pages with clear answers, source-ready facts, consistent entities, schema, and internal links. ALPHAXXXX helps make those pages easier for Perplexity to retrieve, summarize, and cite.",
+    audience: [
+      "Brands that want citations in Perplexity answers.",
+      "Teams building source-rich pages for AI search.",
+      "Businesses comparing Perplexity visibility with ChatGPT visibility.",
+    ],
+    outcomes: [
+      "More citable passages for Perplexity-style answer retrieval.",
+      "Clearer page structure for summaries, lists, and direct answers.",
+      "Better Citation Share visibility against competitors.",
+    ],
+    deliverables: [
+      "Perplexity query coverage map.",
+      "Source-ready answer sections.",
+      "FAQPage, Article, Service, and Organization schema review.",
+      "Citation Share audit recommendations.",
+    ],
+    sections: [
+      {
+        heading: "Perplexity favors pages that can act as sources",
+        body: "Perplexity is citation-oriented, so pages should make claims easy to verify, summarize, and link. Definitions, short answers, tables, FAQs, and updated guides give the system more usable source material.",
+      },
+      {
+        heading: "Citable structure matters as much as topic coverage",
+        body: "A page may cover the right topic but still be hard to cite if the answer is buried in vague prose. ALPHAXXXX restructures pages so Perplexity can extract clear statements about the brand, service, audience, and deliverables.",
+      },
+      {
+        heading: "Citation Share shows whether competitors are winning",
+        body: "ALPHAXXXX uses Citation Share auditing to identify which competitors Perplexity cites for the same queries and which evidence gaps prevent the client from appearing.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does Perplexity need external sources?",
+        answer:
+          "Perplexity commonly uses web sources, so accessible and well-structured pages can help a business become a better candidate for citation.",
+      },
+      {
+        question: "What makes a page easier for Perplexity to cite?",
+        answer:
+          "Direct answers, clear headings, factual paragraphs, FAQs, schema, internal links, and visible update dates make a page easier to evaluate and cite.",
+      },
+      {
+        question: "Can ALPHAXXXX improve existing pages for Perplexity?",
+        answer:
+          "Yes. ALPHAXXXX can restructure existing pages into clearer answer blocks, add FAQ content, align schema, and improve internal linking.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "Perplexity visibility optimization", href: "/perplexity-visibility-optimization" },
+      { label: "AI search visibility checklist", href: "/ai-search-visibility-checklist" },
+    ],
+  },
+  {
+    slug: "how-to-get-cited-in-google-ai-overviews",
+    path: "/how-to-get-cited-in-google-ai-overviews",
+    title: "How to Get Cited in Google AI Overviews | ALPHAXXXX",
+    description:
+      "A GEO and SEO-aligned guide to making pages easier for Google AI Overviews to summarize and cite.",
+    family: "platform",
+    schemaType: "Article",
+    h1: "How can a website get cited in Google AI Overviews?",
+    shortAnswer:
+      "A website can improve its chance of being cited in Google AI Overviews by combining strong SEO foundations with direct answers, visible expertise, clear canonical URLs, structured data, internal links, and citation-ready passages. ALPHAXXXX aligns SEO foundations with GEO structure.",
+    audience: [
+      "SEO teams adapting content for AI-generated summaries.",
+      "Businesses that want Google visibility beyond blue links.",
+      "Brands that need clearer answer blocks and source signals.",
+    ],
+    outcomes: [
+      "Stronger pages for Google search and AI-generated summaries.",
+      "More explicit answer sections for informational and commercial queries.",
+      "Better alignment between visible content, metadata, schema, and internal links.",
+    ],
+    deliverables: [
+      "AI Overviews content structure review.",
+      "Canonical, sitemap, and robots validation.",
+      "Answer block and FAQ recommendations.",
+      "Schema alignment for visible page content.",
+    ],
+    sections: [
+      {
+        heading: "AI Overviews still depend on accessible, useful pages",
+        body: "Google AI Overviews do not remove the need for crawlable pages, useful content, internal links, and canonical consistency. GEO adds more explicit answer structure and entity clarity to those SEO foundations.",
+      },
+      {
+        heading: "Passages should answer the query without guesswork",
+        body: "Short definitions, steps, comparisons, checklists, and FAQs make it easier for AI systems to understand what a page contributes. ALPHAXXXX structures pages so important answers are visible in the HTML source.",
+      },
+      {
+        heading: "Schema should describe what users can see",
+        body: "Structured data works best when it reinforces visible content. ALPHAXXXX keeps Article, Service, FAQPage, Organization, and BreadcrumbList schema aligned with the page users and crawlers can read.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can schema guarantee a Google AI Overview citation?",
+        answer:
+          "No. Schema does not guarantee a citation, but accurate structured data can help clarify page type, brand entity, questions, and relationships.",
+      },
+      {
+        question: "Should AI Overviews pages be different from SEO pages?",
+        answer:
+          "They should keep SEO fundamentals but add clearer answer blocks, definitions, FAQs, evidence, and entity consistency for AI summarization.",
+      },
+      {
+        question: "Does ALPHAXXXX optimize for both SEO and GEO?",
+        answer:
+          "ALPHAXXXX focuses on GEO and AI search visibility while preserving crawl, canonical, metadata, and content quality foundations that also matter for SEO.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "Google AI Overviews visibility", href: "/google-ai-overviews-visibility" },
+      { label: "GEO vs SEO", href: "/guides/geo-vs-seo" },
+    ],
+  },
+  {
+    slug: "ai-visibility-tracking-for-brands",
+    path: "/ai-visibility-tracking-for-brands",
+    title: "AI Visibility Tracking for Brands | ALPHAXXXX",
+    description:
+      "Track whether AI search engines mention, cite, and recommend a brand across high-intent prompts and platforms.",
+    family: "audit",
+    schemaType: "Service",
+    h1: "How should brands track AI search visibility?",
+    shortAnswer:
+      "Brands should track AI search visibility by measuring Brand Mention Rate, Citation Share, platform coverage, query-stage coverage, and competitor appearances across ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, and Copilot. ALPHAXXXX turns these signals into a GEO measurement baseline.",
+    audience: [
+      "Brands that need visibility reporting beyond SEO rank tracking.",
+      "Marketing teams comparing AI visibility against competitors.",
+      "Leadership teams that need measurable GEO progress.",
+    ],
+    outcomes: [
+      "A repeatable baseline for AI-generated brand mentions.",
+      "Competitor context through Citation Share auditing.",
+      "Clearer prioritization for content and schema improvements.",
+    ],
+    deliverables: [
+      "Brand Mention Rate query set.",
+      "Citation Share competitor audit.",
+      "Platform and journey-stage reporting model.",
+      "Recommendations tied to measurable visibility gaps.",
+    ],
+    sections: [
+      {
+        heading: "AI visibility needs its own metrics",
+        body: "Traditional rank tracking does not show whether a brand appears inside AI-generated answers. Brand Mention Rate measures how often the brand is named, while Citation Share compares that visibility against competitors.",
+      },
+      {
+        heading: "Query stages reveal where the brand disappears",
+        body: "A useful tracking model separates problem-aware, solution-aware, vendor discovery, trust validation, and objection-handling prompts. This shows which pages or proof points are missing from the evidence set.",
+      },
+      {
+        heading: "Tracking should guide content decisions",
+        body: "ALPHAXXXX uses measurement to decide which pages to add, which sections to restructure, and where entity or citation signals need reinforcement.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is Brand Mention Rate?",
+        answer:
+          "Brand Mention Rate is the proportion of relevant AI-generated answers that mention a brand by name across a defined query set.",
+      },
+      {
+        question: "What is Citation Share?",
+        answer:
+          "Citation Share compares how often a brand is cited or referenced against competitors in the same AI answer space.",
+      },
+      {
+        question: "How often should AI visibility be tracked?",
+        answer:
+          "AI visibility should be tracked regularly because platforms, indexes, competitors, and page content change over time.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "AI search visibility audit", href: "/ai-search-visibility-audit" },
+      { label: "AI search visibility checklist", href: "/ai-search-visibility-checklist" },
+    ],
+  },
+  {
+    slug: "ai-search-visibility-checklist",
+    path: "/ai-search-visibility-checklist",
+    title: "AI Search Visibility Checklist | ALPHAXXXX",
+    description:
+      "A practical checklist for improving AI crawler readability, retrieval readiness, citation readiness, and brand mention probability.",
+    family: "audit",
+    schemaType: "Article",
+    h1: "What should an AI search visibility checklist include?",
+    shortAnswer:
+      "An AI search visibility checklist should include crawler access, sitemap coverage, canonical accuracy, server-rendered core text, entity consistency, direct answer sections, FAQ schema, internal links, pricing or service scope, proof points, and measurement through Brand Mention Rate and Citation Share.",
+    audience: [
+      "Teams auditing a website for GEO readiness.",
+      "SEO teams expanding into AI search visibility.",
+      "Business owners who need a practical improvement list.",
+    ],
+    outcomes: [
+      "A clearer view of what blocks AI retrieval and citation.",
+      "A prioritized list of technical, content, and entity fixes.",
+      "Better alignment between visible content and structured data.",
+    ],
+    deliverables: [
+      "Technical crawler readiness checklist.",
+      "Page-level answer structure checklist.",
+      "Entity and schema consistency checklist.",
+      "Measurement checklist for BMR and Citation Share.",
+    ],
+    sections: [
+      {
+        heading: "Start with access and indexability",
+        body: "Important pages should be in the sitemap, allowed by robots.txt, served over HTTPS, canonicalized correctly, and readable in the initial HTML. AI systems cannot use content they cannot reliably fetch.",
+      },
+      {
+        heading: "Then make the content extractable",
+        body: "Each page should have one clear H1, logical H2 sections, a short answer, FAQs, lists, and specific deliverables. These patterns make the page easier to chunk, retrieve, and cite.",
+      },
+      {
+        heading: "Finish with measurement",
+        body: "A checklist is incomplete unless it measures results. ALPHAXXXX connects checklist improvements to Brand Mention Rate, Citation Share, and query-stage visibility.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is an AI search visibility checklist different from an SEO checklist?",
+        answer:
+          "Yes. It includes SEO foundations but adds entity clarity, retrieval-ready answers, citation readiness, AI crawler readability, and AI answer measurement.",
+      },
+      {
+        question: "What is the most common checklist failure?",
+        answer:
+          "The most common failure is having too few high-intent pages, which leaves AI retrieval systems with too little evidence to select.",
+      },
+      {
+        question: "Can ALPHAXXXX run this checklist as an audit?",
+        answer:
+          "Yes. ALPHAXXXX can use the checklist to audit access, structure, schema, entity consistency, content gaps, and measurement readiness.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "Get found in AI search engines", href: "/get-found-in-ai-search-engines" },
+      { label: "AI visibility tracking for brands", href: "/ai-visibility-tracking-for-brands" },
+    ],
+  },
+  {
+    slug: "geo-vs-aeo-vs-ai-seo",
+    path: "/geo-vs-aeo-vs-ai-seo",
+    title: "GEO vs AEO vs AI SEO | ALPHAXXXX",
+    description:
+      "Compare Generative Engine Optimization, Answer Engine Optimization, and AI SEO for teams planning AI search visibility.",
+    family: "objection",
+    schemaType: "Article",
+    h1: "What is the difference between GEO, AEO, and AI SEO?",
+    shortAnswer:
+      "GEO focuses on making a brand retrievable, citable, and mentionable inside generative AI answers. AEO focuses on answer-ready content for answer engines. AI SEO is a broader term for adapting SEO to AI-assisted search. ALPHAXXXX uses GEO as the primary discipline because it centers retrieval, entity clarity, citation readiness, and Brand Mention Rate.",
+    audience: [
+      "Teams confused by GEO, AEO, AI SEO, and answer engine terminology.",
+      "SEO agencies packaging AI search visibility services.",
+      "Businesses choosing the right optimization framework.",
+    ],
+    outcomes: [
+      "Clearer terminology for AI search planning.",
+      "Better separation between ranking, answering, retrieval, and citation goals.",
+      "A practical framework for choosing content and measurement priorities.",
+    ],
+    deliverables: [
+      "Terminology comparison for GEO, AEO, and AI SEO.",
+      "Measurement recommendations for each discipline.",
+      "Content structure recommendations for AI answer systems.",
+      "Internal education material for teams and clients.",
+    ],
+    sections: [
+      {
+        heading: "GEO is centered on generative retrieval and citation",
+        body: "Generative Engine Optimization asks whether AI systems can retrieve a brand, understand the entity, and cite or mention it in generated answers. The success metric is visibility inside the answer, not only traffic from a ranked result.",
+      },
+      {
+        heading: "AEO emphasizes answer-ready content",
+        body: "Answer Engine Optimization is useful language for direct answers, FAQs, snippets, and structured explanations. It overlaps with GEO, but GEO adds a stronger focus on LLM visibility, RAG systems, and citation measurement.",
+      },
+      {
+        heading: "AI SEO is a broad transition term",
+        body: "AI SEO often means adapting SEO workflows to AI search features. ALPHAXXXX treats it as adjacent language while keeping the operating model focused on GEO measurement and retrievability.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is GEO the same as AEO?",
+        answer:
+          "No. They overlap, but GEO focuses more on generative AI retrieval, entity clarity, citation readiness, and brand mention measurement.",
+      },
+      {
+        question: "Is AI SEO a useful term?",
+        answer:
+          "AI SEO is useful as a broad market term, but teams still need precise GEO metrics such as Brand Mention Rate and Citation Share.",
+      },
+      {
+        question: "Which framework does ALPHAXXXX use?",
+        answer:
+          "ALPHAXXXX uses GEO as the main framework and includes answer-ready content, SEO foundations, structured data, and AI visibility measurement inside that approach.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "GEO vs SEO", href: "/guides/geo-vs-seo" },
+      { label: "GEO for SEO agencies", href: "/geo-for-seo-agencies" },
+    ],
+  },
+  {
+    slug: "how-much-does-geo-cost-in-australia",
+    path: "/how-much-does-geo-cost-in-australia",
+    title: "How Much Does GEO Cost in Australia? | ALPHAXXXX",
+    description:
+      "Understand the factors that affect GEO pricing in Australia, including audits, content volume, schema work, and measurement.",
+    family: "pricing",
+    schemaType: "Article",
+    h1: "How much does GEO cost in Australia?",
+    shortAnswer:
+      "GEO cost in Australia depends on the current site size, content gaps, target platforms, competitor pressure, schema needs, implementation scope, and measurement requirements. ALPHAXXXX recommends starting with an AI search visibility audit before pricing a full corpus expansion or measurement program.",
+    audience: [
+      "Australian businesses budgeting for GEO.",
+      "Founders comparing GEO agencies and AI visibility tools.",
+      "Marketing leaders deciding whether to start with audit or implementation.",
+    ],
+    outcomes: [
+      "Clearer understanding of what drives GEO cost.",
+      "Better separation between audit, implementation, and measurement work.",
+      "Reduced risk of paying for vague AI visibility advice.",
+    ],
+    deliverables: [
+      "Australia-focused GEO audit scope.",
+      "Content corpus estimate.",
+      "Schema and metadata implementation scope.",
+      "BMR and Citation Share measurement model.",
+    ],
+    sections: [
+      {
+        heading: "The biggest cost driver is often content volume",
+        body: "If a site has only a small number of indexable pages, the first investment is usually a high-intent content corpus. More pages create more opportunities for AI systems to retrieve relevant evidence.",
+      },
+      {
+        heading: "Implementation costs differ from strategy costs",
+        body: "A strategy-only engagement identifies gaps, while implementation creates or restructures pages, metadata, schema, internal links, and measurement. Buyers should ask exactly which deliverables are included.",
+      },
+      {
+        heading: "Measurement should be included in serious GEO work",
+        body: "Without Brand Mention Rate or Citation Share tracking, a business cannot tell whether GEO changes are improving AI answer visibility over time.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Should Australian businesses start with a GEO audit?",
+        answer:
+          "Yes. An audit establishes the current visibility baseline, content gaps, and technical blockers before a larger implementation is priced.",
+      },
+      {
+        question: "Is GEO cheaper than SEO?",
+        answer:
+          "Not necessarily. GEO can be narrower than SEO in some cases, but it often requires new content, schema, and measurement that traditional SEO retainers do not include.",
+      },
+      {
+        question: "What should GEO pricing include?",
+        answer:
+          "GEO pricing should specify audit scope, content pages, schema work, internal linking, platform coverage, reporting, and implementation responsibilities.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "GEO pricing", href: "/geo-pricing" },
+      { label: "GEO agency Australia", href: "/geo-agency-australia" },
+    ],
+  },
+  {
+    slug: "is-geo-worth-it-for-small-businesses",
+    path: "/is-geo-worth-it-for-small-businesses",
+    title: "Is GEO Worth It for Small Businesses? | ALPHAXXXX",
+    description:
+      "Evaluate when Generative Engine Optimization is worth it for small businesses and when to wait.",
+    family: "objection",
+    schemaType: "Article",
+    h1: "Is GEO worth it for small businesses?",
+    shortAnswer:
+      "GEO can be worth it for small businesses when customers use AI assistants to research providers, compare services, ask local recommendation questions, or validate trust before buying. ALPHAXXXX helps small businesses decide whether the first move should be an audit, a small content corpus, or a broader AI visibility program.",
+    audience: [
+      "Small businesses evaluating AI search visibility for the first time.",
+      "Local service providers competing for recommendation queries.",
+      "Founders deciding whether GEO should come before a larger SEO program.",
+    ],
+    outcomes: [
+      "Clearer decision criteria for small-business GEO investment.",
+      "A lower-risk starting path through audit and priority pages.",
+      "Better understanding of when GEO is not the next best investment.",
+    ],
+    deliverables: [
+      "Small-business GEO readiness review.",
+      "Priority page list for local or service-intent queries.",
+      "Basic schema and FAQ recommendations.",
+      "Simple BMR tracking set for core buying prompts.",
+    ],
+    sections: [
+      {
+        heading: "GEO is most useful when buyers ask AI for recommendations",
+        body: "If customers ask AI systems which provider to hire, which agency to compare, or whether a service is worth it, small businesses need pages that can be retrieved and summarized for those questions.",
+      },
+      {
+        heading: "Small businesses should avoid overbuilding first",
+        body: "The first step does not need to be a large program. ALPHAXXXX usually recommends starting with an audit, core service pages, FAQ content, pricing guidance, and proof points.",
+      },
+      {
+        heading: "GEO may wait if the basics are missing",
+        body: "If a small business has no clear service pages, weak local signals, or poor technical access, those fundamentals should be fixed before expecting AI answer visibility.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What small businesses benefit most from GEO?",
+        answer:
+          "Small businesses that depend on recommendations, local discovery, professional trust, or high-value service decisions benefit most from GEO.",
+      },
+      {
+        question: "Can a small business compete with larger brands in AI answers?",
+        answer:
+          "It can compete in narrower local, service, and niche queries if the site provides clearer and more useful evidence than larger generic competitors.",
+      },
+      {
+        question: "What is the first GEO step for a small business?",
+        answer:
+          "The first step is usually an AI search visibility audit followed by a small set of high-intent service, location, FAQ, pricing, and proof pages.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "Local service GEO", href: "/geo-for-local-service-businesses" },
+      { label: "How much GEO costs in Australia", href: "/how-much-does-geo-cost-in-australia" },
+    ],
+  },
+  {
+    slug: "questions-to-ask-before-hiring-a-geo-agency",
+    path: "/questions-to-ask-before-hiring-a-geo-agency",
+    title: "Questions to Ask Before Hiring a GEO Agency | ALPHAXXXX",
+    description:
+      "Use these questions to evaluate GEO agencies, AI search visibility providers, and citation readiness consultants.",
+    family: "objection",
+    schemaType: "Article",
+    h1: "What questions should you ask before hiring a GEO agency?",
+    shortAnswer:
+      "Before hiring a GEO agency, ask how it measures Brand Mention Rate, how it audits Citation Share, which AI platforms it targets, what pages it will create, how it handles schema, and how it proves that AI search visibility is improving. ALPHAXXXX uses these questions to make GEO work concrete.",
+    audience: [
+      "Businesses comparing GEO agencies.",
+      "Marketing teams building an RFP for AI search visibility.",
+      "Decision makers who need proof before buying GEO services.",
+    ],
+    outcomes: [
+      "Better vendor evaluation criteria.",
+      "Clearer expectations for deliverables and measurement.",
+      "Less risk of buying generic SEO advice under a GEO label.",
+    ],
+    deliverables: [
+      "GEO agency evaluation questions.",
+      "Measurement and reporting requirements.",
+      "Content and schema deliverable checklist.",
+      "Platform coverage and competitor audit prompts.",
+    ],
+    sections: [
+      {
+        heading: "Ask how visibility will be measured",
+        body: "A GEO agency should explain Brand Mention Rate, Citation Share, query sets, platform coverage, and how results will be tracked. Without measurement, GEO becomes opinion rather than evidence.",
+      },
+      {
+        heading: "Ask what content will be created or restructured",
+        body: "If the website has too few high-intent pages, a GEO agency should identify the pages needed for retrieval. ALPHAXXXX prioritizes audit, pricing, platform, comparison, and objection-handling pages.",
+      },
+      {
+        heading: "Ask how technical access is handled",
+        body: "The agency should check sitemap coverage, robots rules, canonical URLs, server-rendered text, metadata, schema, and whether important pages can be crawled by search and AI systems.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is a red flag when hiring a GEO agency?",
+        answer:
+          "A red flag is a provider that promises guaranteed AI recommendations without explaining content, schema, entity signals, platform behavior, and measurement limits.",
+      },
+      {
+        question: "Should a GEO agency provide reporting?",
+        answer:
+          "Yes. Reporting should include Brand Mention Rate, Citation Share, platform coverage, content changes, and next-priority recommendations.",
+      },
+      {
+        question: "Does ALPHAXXXX provide a GEO evaluation framework?",
+        answer:
+          "Yes. ALPHAXXXX frames GEO around audit, entity engineering, structural optimization, content corpus expansion, and measurable AI visibility.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "GEO agency comparison checklist", href: "/geo-agency-comparison-checklist" },
+      { label: "GEO FAQ and objections", href: "/geo-faq-objection-handling" },
+    ],
+  },
+  {
+    slug: "geo-agency-comparison-checklist",
+    path: "/geo-agency-comparison-checklist",
+    title: "GEO Agency Comparison Checklist | ALPHAXXXX",
+    description:
+      "Compare GEO agencies by measurement, content corpus strategy, platform coverage, schema quality, and citation readiness.",
+    family: "objection",
+    schemaType: "Article",
+    h1: "How should businesses compare GEO agencies?",
+    shortAnswer:
+      "Businesses should compare GEO agencies by whether they measure Brand Mention Rate, audit Citation Share, build high-intent pages, improve schema and metadata, address AI crawler readability, and explain how work maps to ChatGPT, Perplexity, Google AI Overviews, and other AI search systems.",
+    audience: [
+      "Teams shortlisting GEO agencies or AI visibility consultants.",
+      "Businesses comparing specialist GEO providers with SEO agencies.",
+      "Procurement and marketing leaders building evaluation criteria.",
+    ],
+    outcomes: [
+      "A practical checklist for comparing GEO providers.",
+      "Clearer distinction between strategy, implementation, and measurement.",
+      "Better protection against vague or unmeasurable AI visibility claims.",
+    ],
+    deliverables: [
+      "Agency comparison criteria.",
+      "Measurement and reporting checklist.",
+      "Content corpus and schema review prompts.",
+      "Platform and competitor coverage questions.",
+    ],
+    sections: [
+      {
+        heading: "Compare measurement first",
+        body: "A strong GEO agency should be able to explain how it measures brand visibility in AI answers. Brand Mention Rate and Citation Share are more relevant than traditional ranking reports alone.",
+      },
+      {
+        heading: "Compare the content corpus strategy",
+        body: "If a site has too few pages, the agency should recommend high-intent content expansion. ALPHAXXXX treats content volume and retrieval fit as a core part of AI visibility.",
+      },
+      {
+        heading: "Compare implementation depth",
+        body: "A credible provider should address visible content, metadata, schema, sitemap, robots, internal links, and page-level answer structure rather than only delivering a slide deck.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Should a GEO agency be different from an SEO agency?",
+        answer:
+          "A GEO agency can overlap with SEO, but it should have specific methods for AI retrieval, citation readiness, entity consistency, and Brand Mention Rate measurement.",
+      },
+      {
+        question: "What is the most important comparison criterion?",
+        answer:
+          "The most important criterion is whether the agency can connect deliverables to measurable AI search visibility rather than only general content quality.",
+      },
+      {
+        question: "Can ALPHAXXXX be compared against GEO tools?",
+        answer:
+          "Yes. Tools can help monitor visibility, while ALPHAXXXX focuses on audit, content structure, schema, entity signals, and implementation strategy.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "Questions before hiring a GEO agency", href: "/questions-to-ask-before-hiring-a-geo-agency" },
+      { label: "GEO pricing", href: "/geo-pricing" },
+    ],
+  },
+  {
+    slug: "ai-search-visibility-for-b2b-companies",
+    path: "/ai-search-visibility-for-b2b-companies",
+    title: "AI Search Visibility for B2B Companies | ALPHAXXXX",
+    description:
+      "AI search visibility strategy for B2B companies that need to appear in vendor discovery, comparison, and trust validation answers.",
+    family: "industry",
+    schemaType: "Service",
+    h1: "How can B2B companies improve AI search visibility?",
+    shortAnswer:
+      "B2B companies can improve AI search visibility by publishing structured pages for category education, use cases, comparisons, pricing context, buyer objections, integrations, and proof. ALPHAXXXX helps B2B brands become easier for AI systems to retrieve, cite, and recommend during vendor research.",
+    audience: [
+      "B2B companies competing in complex buying journeys.",
+      "Marketing teams that need vendor discovery visibility in AI answers.",
+      "Founders and revenue leaders building category authority.",
+    ],
+    outcomes: [
+      "More pages mapped to B2B journey stages.",
+      "Clearer entity signals for category, use case, market, and proof.",
+      "Better AI answer coverage for vendor discovery and trust validation.",
+    ],
+    deliverables: [
+      "B2B AI visibility audit.",
+      "Journey-stage content map.",
+      "Comparison, pricing, and objection page recommendations.",
+      "Brand Mention Rate tracking for B2B buying prompts.",
+    ],
+    sections: [
+      {
+        heading: "B2B buyers use AI to narrow vendor options",
+        body: "B2B buyers ask AI systems which vendors to compare, what solutions exist, and what questions to ask before buying. Brands need content that can answer those prompts directly.",
+      },
+      {
+        heading: "Journey-stage pages improve retrieval coverage",
+        body: "Problem-aware, solution-aware, vendor discovery, trust validation, and objection-handling pages give AI systems more chances to retrieve the brand at each buying stage.",
+      },
+      {
+        heading: "ALPHAXXXX connects B2B content to measurement",
+        body: "ALPHAXXXX tracks whether B2B content improves Brand Mention Rate and Citation Share across the query set that matters to the buying committee.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which B2B pages matter most for GEO?",
+        answer:
+          "Category pages, use-case pages, comparison pages, pricing pages, integration pages, objection pages, and case studies usually matter most.",
+      },
+      {
+        question: "Can GEO support B2B demand generation?",
+        answer:
+          "Yes. GEO can support demand generation by increasing the chance that AI systems mention the brand during research and vendor shortlisting.",
+      },
+      {
+        question: "How does ALPHAXXXX measure B2B AI visibility?",
+        answer:
+          "ALPHAXXXX measures Brand Mention Rate, Citation Share, query-stage coverage, and competitor visibility across relevant B2B prompts.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "GEO for SaaS companies", href: "/geo-for-saas-companies" },
+      { label: "AI visibility tracking for brands", href: "/ai-visibility-tracking-for-brands" },
+    ],
+  },
+  {
+    slug: "ai-search-visibility-for-professional-services",
+    path: "/ai-search-visibility-for-professional-services",
+    title: "AI Search Visibility for Professional Services | ALPHAXXXX",
+    description:
+      "GEO strategy for professional services firms that want to be mentioned in AI-generated provider recommendations.",
+    family: "industry",
+    schemaType: "Service",
+    h1: "How can professional services firms improve AI search visibility?",
+    shortAnswer:
+      "Professional services firms can improve AI search visibility by publishing clear service pages, industry pages, location pages, pricing guidance, proof points, FAQs, and comparison content that help AI systems understand expertise and customer fit. ALPHAXXXX structures these signals for citation readiness.",
+    audience: [
+      "Consultancies, agencies, advisors, and specialist service firms.",
+      "Professional services teams that depend on trust and expertise signals.",
+      "Firms in Australia that want better AI recommendation visibility.",
+    ],
+    outcomes: [
+      "Clearer expertise, service, location, and proof signals.",
+      "More retrievable pages for provider recommendation queries.",
+      "Better objection-handling content for high-consideration services.",
+    ],
+    deliverables: [
+      "Professional services AI visibility audit.",
+      "Service, industry, and location page map.",
+      "FAQ, proof, and comparison page recommendations.",
+      "Schema and internal-link implementation plan.",
+    ],
+    sections: [
+      {
+        heading: "Professional services need trust-ready evidence",
+        body: "AI systems need clear evidence before recommending a professional services firm. Pages should explain the service, the firm, the audience, the location, proof points, process, and expected outcomes.",
+      },
+      {
+        heading: "Objection content is especially important",
+        body: "Buyers often ask whether a service is worth it, what it costs, and what questions to ask before hiring. ALPHAXXXX creates answer-ready content for those trust validation and objection-handling prompts.",
+      },
+      {
+        heading: "Local and industry signals improve fit",
+        body: "Professional services firms should make location and industry relevance explicit. This helps AI systems understand when the firm is a suitable recommendation for a specific user query.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which professional services firms can use GEO?",
+        answer:
+          "Consultancies, agencies, advisors, legal, finance, technology, marketing, and specialist service firms can use GEO when buyers research providers through AI systems.",
+      },
+      {
+        question: "What content should professional services firms publish first?",
+        answer:
+          "Start with core service pages, location pages, industry pages, FAQ pages, pricing guidance, comparison content, and proof-led case studies.",
+      },
+      {
+        question: "Can ALPHAXXXX help local professional services firms?",
+        answer:
+          "Yes. ALPHAXXXX can align local service content, schema, entity signals, and internal links for AI search visibility in Australia and Sydney.",
+      },
+    ],
+    internalLinks: [
+      ...coreLinks,
+      { label: "AI search optimization Sydney", href: "/ai-search-optimization-sydney" },
+      { label: "Local service GEO", href: "/geo-for-local-service-businesses" },
     ],
   },
 ];

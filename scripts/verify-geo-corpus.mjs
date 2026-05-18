@@ -21,6 +21,18 @@ const requiredSlugs = [
   "geo-for-local-service-businesses",
   "geo-for-seo-agencies",
   "geo-faq-objection-handling",
+  "how-to-get-recommended-by-chatgpt",
+  "how-to-appear-in-perplexity-answers",
+  "how-to-get-cited-in-google-ai-overviews",
+  "ai-visibility-tracking-for-brands",
+  "ai-search-visibility-checklist",
+  "geo-vs-aeo-vs-ai-seo",
+  "how-much-does-geo-cost-in-australia",
+  "is-geo-worth-it-for-small-businesses",
+  "questions-to-ask-before-hiring-a-geo-agency",
+  "geo-agency-comparison-checklist",
+  "ai-search-visibility-for-b2b-companies",
+  "ai-search-visibility-for-professional-services",
 ];
 
 const missingFiles = requiredFiles.filter((file) => !existsSync(join(root, file)));

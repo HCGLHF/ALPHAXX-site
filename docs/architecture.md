@@ -26,4 +26,4 @@ Static page data should flow from narrow content modules into route pages. Route
 - Do not add new core abstractions without recording why in an ADR when they affect routing, content models, or schema generation.
 
 ## Current Architecture Pressure
-The site currently has too few URLs and too much page content written directly in route files. The next content expansion should introduce a narrow content inventory and reusable templates before adding dozens of intent pages.
+The site now uses a narrow static content inventory and reusable template for intent pages. The next architecture pressure is file size: `src/lib/intent-pages.ts` should be split by intent family if the corpus expands beyond the current batch, while keeping one shared route registry for sitemap, llms.txt, metadata, and static params.

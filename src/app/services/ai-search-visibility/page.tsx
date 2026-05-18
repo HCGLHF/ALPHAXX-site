@@ -36,9 +36,14 @@ const serviceEvidenceLinks = [
   { label: "ChatGPT recommendation optimization", href: "/chatgpt-recommendation-optimization" },
   { label: "Perplexity visibility optimization", href: "/perplexity-visibility-optimization" },
   { label: "Google AI Overviews visibility", href: "/google-ai-overviews-visibility" },
+  { label: "AI visibility tracking for brands", href: "/ai-visibility-tracking-for-brands" },
+  { label: "AI search visibility checklist", href: "/ai-search-visibility-checklist" },
+  { label: "GEO agency comparison checklist", href: "/geo-agency-comparison-checklist" },
   { label: "GEO for SaaS companies", href: "/geo-for-saas-companies" },
   { label: "GEO for local service businesses", href: "/geo-for-local-service-businesses" },
   { label: "GEO for SEO agencies", href: "/geo-for-seo-agencies" },
+  { label: "AI visibility for B2B companies", href: "/ai-search-visibility-for-b2b-companies" },
+  { label: "AI visibility for professional services", href: "/ai-search-visibility-for-professional-services" },
 ] as const;
 
 export default function ServicePage() {

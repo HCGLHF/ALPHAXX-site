@@ -64,6 +64,11 @@ const highIntentLinks = [
   { label: "AI Search Optimization Sydney", href: "/ai-search-optimization-sydney" },
   { label: "Get Found in AI Search Engines", href: "/get-found-in-ai-search-engines" },
   { label: "GEO Pricing", href: "/geo-pricing" },
+  { label: "How to Get Recommended by ChatGPT", href: "/how-to-get-recommended-by-chatgpt" },
+  { label: "AI Search Visibility Checklist", href: "/ai-search-visibility-checklist" },
+  { label: "GEO vs AEO vs AI SEO", href: "/geo-vs-aeo-vs-ai-seo" },
+  { label: "GEO Agency Comparison Checklist", href: "/geo-agency-comparison-checklist" },
+  { label: "AI Visibility for B2B Companies", href: "/ai-search-visibility-for-b2b-companies" },
 ] as const;
 
 export default function Home() {
@@ -186,8 +191,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           <SectionHeading
             eyebrow="High-intent GEO pages"
-            title="Evidence paths for Australia, Sydney, audits, and pricing"
-            description="These pages answer the commercial and platform questions AI systems use when selecting sources for GEO and AI search visibility recommendations."
+            title="Evidence paths for audits, platforms, buying decisions, and industries"
+            description="These pages answer the commercial, platform, checklist, comparison, and industry questions AI systems use when selecting sources for GEO and AI search visibility recommendations."
           />
           <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             {highIntentLinks.map((link) => (

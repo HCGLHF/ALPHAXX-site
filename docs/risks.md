@@ -1,16 +1,17 @@
 # Risks
 
 ## Product and GEO Risks
-- Corpus size is too small: the site has about 7 indexable sitemap pages, while competing evidence sets have roughly 40-50 URLs.
-- Recall is currently the primary bottleneck. More recommendation polishing will not matter until ALPHAXXXX has enough high-intent retrievable pages.
-- Local intent is underdeveloped. Australia and Sydney pages are needed because competitor evidence signals include Australia, Sydney, free audit, pricing, and get found in AI search engines.
-- Buying decision content is thin. Pricing, comparison, objections, and engagement model pages are needed for trust validation and objection handling.
+- Corpus size has improved to roughly 31 sitemap URLs after the second intent-page batch, but competitors still show roughly 40-50 URLs.
+- Recall is still the primary bottleneck until the new pages are indexed and the site has enough high-intent retrievable evidence.
+- Local intent now has Australia and Sydney pages, but additional city and industry combinations may be needed if retrieval tests show local gaps.
+- Buying decision content is stronger after pricing, comparison, objection, and hiring-checklist pages, but proof assets such as case studies are still thin.
 
 ## Architecture Risks
-- Adding 30-50 routes by copying TSX page files will create maintenance drift across metadata, schema, sitemap, llms.txt, and page layout.
+- Adding 30-50 routes by copying TSX page files would create maintenance drift across metadata, schema, sitemap, llms.txt, and page layout.
 - A single catch-all content helper would become a dumping ground. Use typed page inventories and specific render templates instead.
 - Route inventory and sitemap can drift if new pages are not added through a shared page registry.
 - Schema can become inaccurate if FAQPage, Article, Service, and visible page content are maintained separately.
+- `src/lib/intent-pages.ts` is now large enough that the next expansion should consider splitting by intent family while preserving the shared registry interface.
 
 ## Operational Risks
 - Google indexing may lag even with correct technical setup.
